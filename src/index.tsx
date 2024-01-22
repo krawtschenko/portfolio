@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import {ThemeProvider} from "styled-components";
-import {theme} from "common/styles/theme.styled";
+import {mainTheme} from "common/styles/theme.styled";
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
-	<ThemeProvider theme={theme}>
+	<ThemeProvider theme={mainTheme}>
 		<App/>
 	</ThemeProvider>,
 );
