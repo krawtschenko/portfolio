@@ -1,4 +1,4 @@
-export const mainTheme = {
+export const theme = {
 	colors: {
 		primaryColor: 'hsl(165, 60%, 40%)',
 		titleColor: 'hsl(0, 0%, 100%)',
