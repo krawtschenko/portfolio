@@ -13,6 +13,7 @@ export const HomeMain = styled.section`
 `
 export const HomeContainer = styled(Container)`
 	width: 100%;
+	position: relative;
 `
 export const HomeSubtitle = styled.p`
 	font-weight: 700;
@@ -53,6 +54,69 @@ export const HomeJob = styled.p`
 		font-family: ${typography.secondFont};
 		font-size: ${typography.h2FontSize};
 		margin-left: 10px;
+	}
+`
+export const HomeImgWrapper = styled.div`
+	position: absolute;
+	top: 0;
+	right: -25px;
+	width: 100%;
+	// 123
+	max-width: 600px;
+`
+export const HomeBanner = styled.div`
+	background-color: ${colors.primaryColor};
+	padding-bottom: 100%;
+	border-radius: 50%;
+	position: relative;
+	
+	img {
+		position: absolute;
+		// 123
+		right: 26px;
+		bottom: -10px;
+		height: 800px;
+		border-radius: 500px;
+		object-fit: cover;
+		// 123
+		//width: 90%;
+	}
+`
+export const HomeData = styled.p`
+	position: absolute;
+	border: 2px solid ${colors.borderColor};
+	background: ${colors.containerColor};
+	box-shadow: ${theme.shadow};
+	padding-inline: 20px;
+	width: 250px;
+	height: 82px;
+	border-radius: 82px;
+	display: flex;
+	align-items: center;
+
+	&:nth-child(odd) {
+		bottom: 20%;
+		left: -4%;
+	}
+
+	&:nth-child(even) {
+		bottom: 12%;
+		right: 6%;
+	}
+
+	span {
+		width: 50%;
+		color: ${colors.titleColor};
+		font-weight: 700;
+
+		&:nth-child(odd) {
+			text-align: center;
+			font-size: 37px;
+		}
+		
+		b {
+			color: ${colors.primaryColor};
+		}
 	}
 `
 export const HomeText = styled.p`

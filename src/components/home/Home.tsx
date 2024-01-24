@@ -6,8 +6,9 @@ import {FaFacebook} from "react-icons/fa";
 import {FaLinkedin} from "react-icons/fa";
 import {FaGithub} from "react-icons/fa";
 import {
+	HomeBanner,
 	HomeButtons,
-	HomeContainer,
+	HomeContainer, HomeData, HomeImgWrapper,
 	HomeJob,
 	HomeMain,
 	HomeSocials,
@@ -32,6 +33,21 @@ export const Home = () => {
 				<HomeJob>
 					<span>I AM</span> <b>Web Developer</b>
 				</HomeJob>
+
+				<HomeImgWrapper>
+					<HomeBanner>
+						<img src={profileImg} alt="profileImg"/>
+					</HomeBanner>
+
+					<HomeData>
+						<span>330</span>
+						<span>Completed <b>Projects</b></span>
+					</HomeData>
+					<HomeData>
+						<span>4 <b>+</b></span>
+						<span>Years of <b>Experience</b></span>
+					</HomeData>
+				</HomeImgWrapper>
 
 				<HomeText>
 					From Ukraine. I have rich experience in front-end development, also I am good in back-end development.

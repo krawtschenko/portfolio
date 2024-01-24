@@ -17,6 +17,17 @@ export const HeroLink = styled.a`
 	display: grid;
 	place-items: center;
 	position: relative;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: -97%;
+		transform: translateY(-50%);
+		width: 40px;
+		height: 2px;
+		background-color: ${theme.colors.borderColor};
+	}
 `
 
 export const Button = styled(HeroLink)`
