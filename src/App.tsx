@@ -1,7 +1,10 @@
+import {Home} from "components/home/Home";
+
 const App = () => {
 	return (
-		<div className="content">
-		</div>
+		<main>
+			<Home/>
+		</main>
 	);
 };
 
