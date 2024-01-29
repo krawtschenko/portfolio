@@ -27,7 +27,7 @@ export const Home = () => {
 				</HomeSubtitle>
 
 				<HomeTitle>
-					<span>Serhii</span> Slavita
+					<span>Pan</span> Slavita
 				</HomeTitle>
 
 				<HomeJob>

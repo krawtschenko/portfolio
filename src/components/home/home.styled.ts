@@ -59,10 +59,9 @@ export const HomeJob = styled.p`
 export const HomeImgWrapper = styled.div`
 	position: absolute;
 	top: 0;
-	right: -25px;
+	right: 12px;
 	width: 100%;
-	// 123
-	max-width: 600px;
+	max-width: 680px;
 `
 export const HomeBanner = styled.div`
 	background-color: ${colors.primaryColor};
@@ -72,14 +71,10 @@ export const HomeBanner = styled.div`
 	
 	img {
 		position: absolute;
-		// 123
-		right: 26px;
-		bottom: -10px;
+		bottom: 0;
 		height: 800px;
 		border-radius: 500px;
 		object-fit: cover;
-		// 123
-		//width: 90%;
 	}
 `
 export const HomeData = styled.p`

@@ -22,7 +22,7 @@ export const HeroLink = styled.a`
 		content: '';
 		position: absolute;
 		top: 50%;
-		left: -97%;
+		left: -96%;
 		transform: translateY(-50%);
 		width: 40px;
 		height: 2px;
