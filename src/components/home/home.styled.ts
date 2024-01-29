@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "common/styles/theme.styled";
-import {Container, HeroLink} from "common/styles/reusable";
+import {Container} from "common/styles/reusable";
 
 const {colors} = theme
 const {typography} = theme
