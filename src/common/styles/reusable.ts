@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {theme} from "common/styles/theme.styled";
 
 export const Container = styled.div`
@@ -17,7 +17,7 @@ export const HeroLink = styled.a`
 	display: grid;
 	place-items: center;
 	position: relative;
-	
+
 	&::before {
 		content: '';
 		position: absolute;
@@ -54,4 +54,39 @@ export const Button = styled(HeroLink)`
 		filter: blur(0);
 		opacity: 1;
 	}
+`
+
+export enum EShapes {
+	SHAPE1,
+	SHAPE2,
+	SHAPE3
+}
+
+const shapesCss = {
+	[EShapes.SHAPE1]: css`
+		width: 226px;
+		height: 226px;
+		top: -35px;
+		right: 6%;
+	`,
+	[EShapes.SHAPE2]: css`
+		bottom: 8%;
+		left: -13%;
+		width: 141px;
+		height: 141px;
+	`,
+	[EShapes.SHAPE3]: css`
+		bottom: 0;
+		right: -7%;
+		width: 141px;
+		height: 141px;
+	`
+}
+
+export const Shape = styled.img<{ styles: EShapes }>`
+	position: absolute;
+	filter: invert(1);
+	opacity: 0.6;
+
+	${({styles}) => shapesCss[styles]}
 `

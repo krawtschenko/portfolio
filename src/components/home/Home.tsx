@@ -1,14 +1,19 @@
 import React from 'react';
 import profileImg from 'assets/profile-img.png'
-import shapeOne from 'assets/shape-1.png'
-import shapeTwo from 'assets/shape-2.png'
-import {FaFacebook} from "react-icons/fa";
-import {FaLinkedin} from "react-icons/fa";
-import {FaGithub} from "react-icons/fa";
+import shape1 from 'assets/shape-1.png'
+import shape2 from 'assets/shape-2.png'
+import {FaFacebook, FaGithub, FaLinkedin} from "react-icons/fa";
 import {
+	EPosition,
 	HomeBanner,
 	HomeButtons,
-	HomeContainer, HomeData, HomeImgWrapper,
+	HomeContainer,
+	HomeData,
+	HomeDataSpanFour,
+	HomeDataSpanOne,
+	HomeDataSpanThree,
+	HomeDataSpanTwo,
+	HomeImgWrapper,
 	HomeJob,
 	HomeMain,
 	HomeSocials,
@@ -16,7 +21,7 @@ import {
 	HomeText,
 	HomeTitle
 } from "components/home/home.styled";
-import {Button, HeroLink} from "common/styles/reusable";
+import {Button, EShapes, HeroLink, Shape} from "common/styles/reusable";
 
 export const Home = () => {
 	return (
@@ -27,7 +32,7 @@ export const Home = () => {
 				</HomeSubtitle>
 
 				<HomeTitle>
-					<span>Pan</span> Slavita
+					<span>Pan</span> Slawita
 				</HomeTitle>
 
 				<HomeJob>
@@ -39,14 +44,27 @@ export const Home = () => {
 						<img src={profileImg} alt="profileImg"/>
 					</HomeBanner>
 
-					<HomeData>
-						<span>330</span>
-						<span>Completed <b>Projects</b></span>
+					<HomeData position={EPosition.LEFT}>
+						<HomeDataSpanOne> {/*span #1*/}
+							12 <b>+</b>
+						</HomeDataSpanOne>
+
+						<HomeDataSpanTwo> {/*span #2*/}
+							YEARS OF <span>EXPERIENCE</span>
+						</HomeDataSpanTwo>
 					</HomeData>
-					<HomeData>
-						<span>4 <b>+</b></span>
-						<span>Years of <b>Experience</b></span>
+
+					<HomeData position={EPosition.RIGHT}>
+						<HomeDataSpanThree>300</HomeDataSpanThree> {/*span #3*/}
+
+						<HomeDataSpanFour> {/*span #4*/}
+							COMPLETED <span>PROJECTS</span>
+						</HomeDataSpanFour>
 					</HomeData>
+
+					<Shape styles={EShapes.SHAPE1} src={shape1}/>
+					<Shape styles={EShapes.SHAPE2} src={shape2}/>
+					<Shape styles={EShapes.SHAPE3} src={shape2}/>
 				</HomeImgWrapper>
 
 				<HomeText>
