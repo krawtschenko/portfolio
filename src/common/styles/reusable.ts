@@ -17,17 +17,23 @@ export const HeroLink = styled.a`
 	display: grid;
 	place-items: center;
 	position: relative;
+	z-index: 1;
+	transition: all 0.7s ${theme.transition};
 
-	&::before {
-		content: '';
-		position: absolute;
-		top: 50%;
-		left: -96%;
-		transform: translateY(-50%);
-		width: 40px;
-		height: 2px;
-		background-color: ${theme.colors.borderColor};
+	&:hover {
+		color: ${theme.colors.primaryColor};
 	}
+
+	// &::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 50%;
+	// 	left: -96%;
+	// 	transform: translateY(-50%);
+	// 	width: 40px;
+	// 	height: 2px;
+	// 	background-color: ${theme.colors.borderColor};
+	// }
 `
 
 export const Button = styled(HeroLink)`
@@ -36,6 +42,10 @@ export const Button = styled(HeroLink)`
 	border-radius: 56px;
 	box-shadow: ${theme.shadow};
 
+	&:hover {
+		color: ${theme.colors.bgColor};
+	}
+	
 	&::before {
 		content: '';
 		position: absolute;
