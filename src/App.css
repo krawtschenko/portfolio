@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Jost:wght@400;500;700&display=swap');
+
+:root {
+	--primaryColor: hsl(165, 60%, 40%);
+	--titleColor: hsl(0, 0%, 100%);
+	--textColor: hsl(0, 0%, 92%);
+	--bgColor: hsl(216, 18%, 16%);
+	--bgColorAlt: hsl(213, 10%, 21%);
+	--containerColor: hsl(217, 18%, 14%);
+	--borderColor: hsl(210, 2%, 65%);
+
+	--firstGradient: linear-gradient(0deg, var(--bgColorAlt) 0%, var(--bgColor) 100%);
+	--secondGradient: linear-gradient(180deg, var(--bgColorAlt) 0%, var(--bgColor) 100%);
+	--thirdGradient: linear-gradient(180deg, var(--bgColor) 0%, var(--bgColor) 100%);
+
+	--bodyFont: 'Jost', sans-serif;
+	--secondFont: 'Jost', sans-serif;
+
+	--biggestFontSize: 90px;
+	--h1FontSize: 44px;
+	--h2FontSize: 30px;
+	--h3FontSize: 28px;
+	--h4FontSize: 24px;
+	--h5FontSize: 22px;
+	--largestFontSize: 21px;
+	--largerFontSize: 20px;
+	--largeFontSize: 18px;
+	--normalFontSize: 16px;
+	--smallFontSize: 15px;
+	--smallerFontSize: 14px;
+	--tinyFontSize: 13px;
+
+	--shadow: 5px 5px rgb(255 255 255 / 10%);
+	--transition: cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button, input, body {
+	font-family: var(--bodyFont);
+	font-size: var(--normalFontSize);
+}
+
+body {
+	color: var(--textColor);
+	background-color: var(--bgColor);
+}
+
+h1, h2, h3 {
+	color: var(--titleColor);
+	font-weight: 700;
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	line-height: 1.7;
+}
+
+a {
+	text-decoration: none;
+}
+
+input, textarea, button {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}

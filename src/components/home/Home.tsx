@@ -1,98 +1,76 @@
-import React from 'react';
-import profileImg from 'assets/profile-img.png'
-import shape1 from 'assets/shape-1.png'
-import shape2 from 'assets/shape-2.png'
+import profileImg from "assets/profile-img.png"
+import shapeOne from "assets/shape-1.png"
+import shapeTwo from "assets/shape-2.png"
 import {FaFacebook, FaGithub, FaLinkedin} from "react-icons/fa";
-import {
-	EPosition,
-	HomeBanner,
-	HomeButtons,
-	HomeContainer,
-	HomeData,
-	HomeDataSpanFour,
-	HomeDataSpanOne,
-	HomeDataSpanThree,
-	HomeDataSpanTwo,
-	HomeImgWrapper,
-	HomeJob,
-	HomeMain,
-	HomeSocials,
-	HomeSubtitle,
-	HomeText,
-	HomeTitle
-} from "components/home/home.styled";
-import {Button, EShapes, HeroLink, Shape} from "common/styles/reusable";
+import style from "components/home/home.module.css"
+import reusable from "common/styles/reusable.module.css"
 
 export const Home = () => {
 	return (
-		<HomeMain>
-			<HomeContainer>
-				<HomeSubtitle>
-					HELLO, <span>MY NAME IS</span>
-				</HomeSubtitle>
+		<section className={style.home} id="home">
+			<div className={`${style.container} ${reusable.container}`}>
+				<p className={`${style.subtitle} ${reusable.text_cs}`}>
+					Hello, <span>my name is</span>
+				</p>
 
-				<HomeTitle>
-					<span>Pan</span> Slawita
-				</HomeTitle>
+				<h1 className={`${style.title} ${reusable.text_cs}`}>
+					<span>Zoe</span> Miller
+				</h1>
 
-				<HomeJob>
-					<span>I AM</span> <b>Web Developer</b>
-				</HomeJob>
+				<p className={style.job}>
+					<span className={reusable.text_cs}>I am</span> <b>Web Developer</b>
+				</p>
 
-				<HomeImgWrapper>
-					<HomeBanner>
+				<div className={style.imgWrapper}>
+					<div className={style.banner}>
 						<img src={profileImg} alt="profileImg"/>
-					</HomeBanner>
+					</div>
 
-					<HomeData position={EPosition.LEFT}>
-						<HomeDataSpanOne> {/*span #1*/}
-							12 <b>+</b>
-						</HomeDataSpanOne>
+					<p className={`${style.data} ${style.dataOne}`}>
+					 <span className={style.text_lg}>
+						 12 <b>+</b>
+					 </span>
 
-						<HomeDataSpanTwo> {/*span #2*/}
-							YEARS OF <span>EXPERIENCE</span>
-						</HomeDataSpanTwo>
-					</HomeData>
+						<span className={`${style.text_sm} ${reusable.text_cs}`}>
+						 Years of <span>experience</span>
+					 </span>
+					</p>
 
-					<HomeData position={EPosition.RIGHT}>
-						<HomeDataSpanThree>300</HomeDataSpanThree> {/*span #3*/}
+					<p className={`${style.data} ${style.dataTwo}`}>
+						<span className={style.text_lg}>330</span>
 
-						<HomeDataSpanFour> {/*span #4*/}
-							COMPLETED <span>PROJECTS</span>
-						</HomeDataSpanFour>
-					</HomeData>
+						<span className={`${style.text_sm} ${reusable.text_cs}`}>
+						 Completed <span>projects</span>
+					 </span>
+					</p>
 
-					<Shape styles={EShapes.SHAPE1} src={shape1}/>
-					<Shape styles={EShapes.SHAPE2} src={shape2}/>
-					<Shape styles={EShapes.SHAPE3} src={shape2}/>
-				</HomeImgWrapper>
+					<img src={shapeOne} alt="shape1" className={`${reusable.shape} ${style.shapeOne}`}/>
+					<img src={shapeTwo} alt="shape2" className={`${reusable.shape} ${style.shapeTwo}`}/>
+					<img src={shapeTwo} alt="shape2" className={`${reusable.shape} ${style.shapeThree}`}/>
+				</div>
 
-				<HomeText>
+				<p className={style.text}>
 					From Ukraine. I have rich experience in front-end development, also I am good in back-end development.
 					I love to talk with you about our unique
-				</HomeText>
+				</p>
 
-				<HomeSocials>
-					<a href='#'>
-						<FaFacebook/>
-					</a>
-					<a href='#'>
+				<div className={style.socials}>
+					<a href={"#"} className={style.socialLink}>
 						<FaLinkedin/>
 					</a>
-					<a href='#'>
+					<a href={"#"} className={style.socialLink}>
+						<FaFacebook/>
+					</a>
+					<a href={"#"} className={style.socialLink}>
 						<FaGithub/>
 					</a>
-				</HomeSocials>
+				</div>
 
-				<HomeButtons>
-					<Button href='#'>
-						Download CV
-					</Button>
-					<HeroLink href='#'>
-						My Skills
-					</HeroLink>
-				</HomeButtons>
-			</HomeContainer>
-		</HomeMain>
+				<div className={style.buttons}>
+					<a href={"#"} className={`${reusable.btn} ${reusable.text_cs}`}>Download CV</a>
+					<a href={"#"} className={`${reusable.heroLink} ${reusable.text_cs}`}>My skills</a>
+				</div>
+			</div>
+		</section>
 	);
 };

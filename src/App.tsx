@@ -2,7 +2,7 @@ import {Home} from "components/home/Home";
 
 const App = () => {
 	return (
-		<main>
+		<main className='main'>
 			<Home/>
 		</main>
 	);
