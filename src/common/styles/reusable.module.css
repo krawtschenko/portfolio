@@ -4,6 +4,11 @@
 	padding-inline: 12px;
 }
 
+.grid {
+	display: grid;
+	gap: 24px;
+}
+
 .text_cs {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -57,11 +62,75 @@
 	place-items: center;
 	position: relative;
 	z-index: 1;
-	transition: all 0.7s var(--transition);
 }
 
 .shape {
 	position: absolute;
 	filter: invert(1);
 	opacity: 0.6;
+}
+
+.section {
+	padding-bottom: 220px;
+}
+
+.sectionTitle {
+	font-size: var(--h1FontSize);
+}
+
+.sectionSubtitle {
+	color: var(--primaryColor);
+	font-size: var(--smallerFontSize);
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 60px;
+
+	span {
+		font-family: var(--secondFont);
+		color: var(--titleColor);
+		font-style: var(--h3FontSize);
+		text-transform: capitalize;
+		margin-left: 10px;
+	}
+}
+
+.sectionTitle, .sectionSubtitle {
+	text-align: center;
+}
+
+.card {
+	background-color: var(--containerColor);
+	overflow: hidden;
+	text-align: left;
+}
+
+.cardOne {
+	padding: 30px 35px;
+	border-radius: 18px;
+}
+
+.link {
+	display: inline-flex;
+	align-items: center;
+	color: var(--titleColor);
+	font-weight: 700;
+
+	&:hover {
+		.linkIcon {
+			margin-left: 15px;
+		}
+	}
+}
+
+.linkIcon {
+	color: var(--primaryColor);
+	margin-left: 20px;
+	transition: all 0.3 var(--transition);
+}
+
+.c_shape {
+	right: -24px;
+	bottom: -24px;
+	width: 141px;
+	height: 141px;
 }

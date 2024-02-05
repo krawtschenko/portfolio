@@ -2,6 +2,10 @@
 
 .home {
 	background-image: var(--firstGradient);
+	padding-bottom: 180px;
+}
+
+.wrapper {
 	min-height: 100vh;
 	display: grid;
 	align-items: center;
