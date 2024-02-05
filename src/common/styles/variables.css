@@ -14,7 +14,7 @@
 	--thirdGradient: linear-gradient(180deg, var(--bgColor) 0%, var(--bgColor) 100%);
 
 	--bodyFont: 'Jost', sans-serif;
-	--secondFont: 'Jost', sans-serif;
+	--secondFont: 'Caveat', cursive;
 
 	--biggestFontSize: 90px;
 	--h1FontSize: 44px;
