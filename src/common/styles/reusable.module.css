@@ -9,13 +9,6 @@
 	letter-spacing: 0.05em;
 }
 
-.text_lg {
-}
-
-.text_sm {
-
-}
-
 .btn {
 	border: 2px solid var(--borderColor);
 	padding-inline: 40px;

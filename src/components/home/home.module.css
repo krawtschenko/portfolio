@@ -1,4 +1,4 @@
-@import "App.css";
+@import "../../app/App.css";
 
 .home {
 	background-image: var(--firstGradient);
