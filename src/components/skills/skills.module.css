@@ -11,7 +11,7 @@
 	display: grid;
 	align-items: center;
 	height: 190px;
-	/*border: 2px solid var(--borderColor);*/
+	background-color: var(--containerColor);
 	border-radius: 20px;
 	box-shadow: var(--shadow);
 
@@ -40,15 +40,10 @@
 }
 
 .logo {
-
 	img {
 		display: block;
 		margin: 0 auto;
 		width: 65px;
 	}
-}
-
-.description {
-	margin-bottom: 30px;
 }
 
