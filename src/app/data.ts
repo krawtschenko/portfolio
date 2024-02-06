@@ -5,6 +5,28 @@ import Project4 from 'assets/project4.jpeg';
 import Project5 from 'assets/project5.jpg';
 import Project6 from 'assets/project6.jpg';
 
+import javascript from 'assets/javascript.svg'
+import typescript from 'assets/typescript.svg'
+import react from 'assets/react.svg'
+import redux from 'assets/redux.svg'
+import html from 'assets/html.svg'
+import css from 'assets/css.svg'
+import sass from 'assets/sass.svg'
+import materialUI from 'assets/materialUI.svg'
+import bootstrap from 'assets/bootstrap.svg'
+import styledComponents from 'assets/styled-components.svg'
+
+import storybook from 'assets/storybook.svg'
+import git from 'assets/git.svg'
+import nodejs from 'assets/nodejs.svg'
+import npm from 'assets/npm.svg'
+import yarn from 'assets/yarn.svg'
+import eslint from 'assets/eslint.svg'
+import postman from 'assets/postman.svg'
+import figma from 'assets/figma.svg'
+import webstorm from 'assets/webstorm.svg'
+import vsCode from 'assets/vs-code.svg'
+
 import Testimonial1 from 'assets/testimonial1.jpg';
 import Testimonial2 from 'assets/testimonial2.jpg';
 import Testimonial3 from 'assets/testimonial3.jpg';
@@ -53,51 +75,128 @@ export const links = [
 export const skills = [
 	{
 		id: 1,
-		name: 'PHP',
-		percentage: 85,
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		name: 'JavaScript',
+		link: 'https://en.wikipedia.org/wiki/JavaScript',
+		logo: javascript
 	},
 
 	{
 		id: 2,
-		name: 'JavaScript',
-		percentage: 75,
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		name: 'TypeScript',
+		link: 'https://en.wikipedia.org/wiki/TypeScript',
+		logo: typescript
 	},
 
 	{
 		id: 3,
-		name: 'WordPress',
-		percentage: 90,
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		name: 'React',
+		link: 'https://en.wikipedia.org/wiki/React_(software)',
+		logo: react
 	},
 
 	{
 		id: 4,
-		name: 'Python',
-		percentage: 75,
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		name: 'Redux | Redux Toolkit',
+		link: 'https://en.wikipedia.org/wiki/Redux_(JavaScript_library)',
+		logo: redux
 	},
-
 	{
 		id: 5,
-		name: 'React',
-		percentage: 70,
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		name: 'HTML',
+		link: 'https://en.wikipedia.org/wiki/HTML',
+		logo: html
 	},
 
 	{
 		id: 6,
-		name: 'Adobe XD',
-		percentage: 80,
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		name: 'CSS',
+		link: 'https://en.wikipedia.org/wiki/CSS',
+		logo: css
 	},
+	{
+		id: 7,
+		name: 'SCSS | Sass',
+		link: 'https://en.wikipedia.org/wiki/Sass_(style_sheet_language)',
+		logo: sass
+	},
+	{
+		id: 8,
+		name: 'Material UI',
+		link: 'https://mui.com/',
+		logo: materialUI
+	},
+	{
+		id: 9,
+		name: 'Bootstrap',
+		link: 'https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)',
+		logo: bootstrap
+	},
+	{
+		id: 10,
+		name: 'Styled Components',
+		link: 'https://styled-components.com/',
+		logo: styledComponents
+	},
+	{
+		id: 11,
+		name: 'Storybook',
+		link: 'https://storybook.js.org/',
+		logo: storybook
+	},
+	{
+		id: 12,
+		name: 'Git',
+		link: 'https://en.wikipedia.org/wiki/Git',
+		logo: git
+	},
+	{
+		id: 13,
+		name: 'Node.js',
+		link: 'https://en.wikipedia.org/wiki/Node.js',
+		logo: nodejs
+	},
+	{
+		id: 14,
+		name: 'Npm',
+		link: 'https://en.wikipedia.org/wiki/Npm',
+		logo: npm
+	},
+	{
+		id: 15,
+		name: 'Yarn',
+		link: 'https://yarnpkg.com/',
+		logo: yarn
+	},
+	{
+		id: 16,
+		name: 'ESLint',
+		link: 'https://en.wikipedia.org/wiki/ESLint',
+		logo: eslint
+	},
+	{
+		id: 17,
+		name: 'Postman',
+		link: 'https://en.wikipedia.org/wiki/Postman_(software)',
+		logo: postman
+	},
+	{
+		id: 18,
+		name: 'Figma',
+		link: 'https://en.wikipedia.org/wiki/Figma',
+		logo: figma
+	},
+	{
+		id: 19,
+		name: 'WebStorm',
+		link: 'https://www.jetbrains.com/webstorm/',
+		logo: webstorm
+	},
+	{
+		id: 20,
+		name: 'Visual Studio Code',
+		link: 'https://en.wikipedia.org/wiki/Visual_Studio_Code',
+		logo: vsCode
+	}
 ];
 
 export const projects = [
