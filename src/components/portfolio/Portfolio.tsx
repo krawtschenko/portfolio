@@ -4,6 +4,7 @@ import reusable from 'common/styles/reusable.module.css'
 import {List} from "./List";
 import {Items} from "./Items";
 import {projects} from "app/data";
+import {AnimatePresence} from "framer-motion";
 
 export const Portfolio = () => {
 	const allNavList = ['all', ...new Set(projects.map(projects => projects.category))]
@@ -29,7 +30,9 @@ export const Portfolio = () => {
 			<List list={navList} filterItems={filterItems}/>
 
 			<div className={`${style.container} ${reusable.container} ${reusable.grid}`}>
-				<Items projectItems={projectItems}/>
+				<AnimatePresence initial={false}>
+					<Items projectItems={projectItems}/>
+				</AnimatePresence>
 			</div>
 		</section>
 	);

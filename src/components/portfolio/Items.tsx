@@ -27,6 +27,7 @@ export const Items = ({projectItems}: Props) => {
 						animate={{opacity: 1, scale: 1}}
 						initial={{opacity: 0.8, scale: 0.6}}
 						exit={{opacity: 0.8, scale: 0.6}}
+						transition={{duration: 0.3}}
 						className={`${style.items} ${reusable.card} ${reusable.cardTwo}`} key={id}>
 						<div className={style.imgWrapper}>
 							<img src={img} alt="img"/>
