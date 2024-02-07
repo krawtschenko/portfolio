@@ -2,6 +2,7 @@ import React from 'react';
 import style from './skills.module.css'
 import reusable from "common/styles/reusable.module.css"
 import {skills} from "app/data";
+import shapeTwo from "assets/shape-2.png";
 
 export const Skills = () => {
 	return (
@@ -19,6 +20,8 @@ export const Skills = () => {
 								<img src={logo} alt="logo"/>
 								<h3 className={style.name}>{name}</h3>
 							</div>
+
+							<img src={shapeTwo} alt="shapeTwo" className={`${reusable.shape} ${style.shape}`}/>
 						</a>
 					)
 				})}

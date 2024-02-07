@@ -18,14 +18,10 @@ import styledComponents from 'assets/styled-components.svg'
 
 import storybook from 'assets/storybook.svg'
 import git from 'assets/git.svg'
-import nodejs from 'assets/nodejs.svg'
 import npm from 'assets/npm.svg'
 import yarn from 'assets/yarn.svg'
 import eslint from 'assets/eslint.svg'
 import postman from 'assets/postman.svg'
-import figma from 'assets/figma.svg'
-import webstorm from 'assets/webstorm.svg'
-import vsCode from 'assets/vs-code.svg'
 
 import Testimonial1 from 'assets/testimonial1.jpg';
 import Testimonial2 from 'assets/testimonial2.jpg';
@@ -151,51 +147,27 @@ export const skills = [
 	},
 	{
 		id: 13,
-		name: 'Node.js',
-		link: 'https://en.wikipedia.org/wiki/Node.js',
-		logo: nodejs
-	},
-	{
-		id: 14,
 		name: 'Npm',
 		link: 'https://en.wikipedia.org/wiki/Npm',
 		logo: npm
 	},
 	{
-		id: 15,
+		id: 14,
 		name: 'Yarn',
 		link: 'https://yarnpkg.com/',
 		logo: yarn
 	},
 	{
-		id: 16,
+		id: 15,
 		name: 'ESLint',
 		link: 'https://en.wikipedia.org/wiki/ESLint',
 		logo: eslint
 	},
 	{
-		id: 17,
+		id: 16,
 		name: 'Postman',
 		link: 'https://en.wikipedia.org/wiki/Postman_(software)',
 		logo: postman
-	},
-	{
-		id: 18,
-		name: 'Figma',
-		link: 'https://en.wikipedia.org/wiki/Figma',
-		logo: figma
-	},
-	{
-		id: 19,
-		name: 'WebStorm',
-		link: 'https://www.jetbrains.com/webstorm/',
-		logo: webstorm
-	},
-	{
-		id: 20,
-		name: 'Visual Studio Code',
-		link: 'https://en.wikipedia.org/wiki/Visual_Studio_Code',
-		logo: vsCode
 	}
 ];
 

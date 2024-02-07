@@ -13,22 +13,30 @@
 	height: 190px;
 	background-color: var(--containerColor);
 	border-radius: 20px;
-	box-shadow: var(--shadow);
+	position: relative;
+	overflow: hidden;
 
 	&:hover {
 		background-color: var(--primaryColor);
 		transform: scale(1.1);
 
-		/*.name {*/
-		/*	color: var(--bgColorAlt);*/
-		/*}*/
+		.shape {
+			display: none;
+		}
 	}
 }
 
 .name {
-	margin-top: 10px;
+	margin-top: 6px;
 	text-align: center;
 	font-style: var(--largestFontSize);
+}
+
+.shape {
+	right: -55px;
+	bottom: -55px;
+	width: 141px;
+	height: 141px;
 }
 
 .item, .name {
