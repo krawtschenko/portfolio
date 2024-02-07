@@ -72,101 +72,85 @@ export const skills = [
 	{
 		id: 1,
 		name: 'JavaScript',
-		link: 'https://en.wikipedia.org/wiki/JavaScript',
 		logo: javascript
 	},
 
 	{
 		id: 2,
 		name: 'TypeScript',
-		link: 'https://en.wikipedia.org/wiki/TypeScript',
 		logo: typescript
 	},
 
 	{
 		id: 3,
 		name: 'React',
-		link: 'https://en.wikipedia.org/wiki/React_(software)',
 		logo: react
 	},
 
 	{
 		id: 4,
 		name: 'Redux',
-		link: 'https://en.wikipedia.org/wiki/Redux_(JavaScript_library)',
 		logo: redux
 	},
 	{
 		id: 5,
 		name: 'HTML',
-		link: 'https://en.wikipedia.org/wiki/HTML',
 		logo: html
 	},
 
 	{
 		id: 6,
 		name: 'CSS',
-		link: 'https://en.wikipedia.org/wiki/CSS',
 		logo: css
 	},
 	{
 		id: 7,
 		name: 'SCSS | Sass',
-		link: 'https://en.wikipedia.org/wiki/Sass_(style_sheet_language)',
 		logo: sass
 	},
 	{
 		id: 8,
 		name: 'Material UI',
-		link: 'https://mui.com/',
 		logo: materialUI
 	},
 	{
 		id: 9,
 		name: 'Bootstrap',
-		link: 'https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)',
 		logo: bootstrap
 	},
 	{
 		id: 10,
 		name: 'Styled Components',
-		link: 'https://styled-components.com/',
 		logo: styledComponents
 	},
 	{
 		id: 11,
 		name: 'Storybook',
-		link: 'https://storybook.js.org/',
 		logo: storybook
 	},
 	{
 		id: 12,
 		name: 'Git',
-		link: 'https://en.wikipedia.org/wiki/Git',
 		logo: git
 	},
 	{
 		id: 13,
 		name: 'Npm',
-		link: 'https://en.wikipedia.org/wiki/Npm',
 		logo: npm
 	},
 	{
 		id: 14,
 		name: 'Yarn',
-		link: 'https://yarnpkg.com/',
 		logo: yarn
 	},
 	{
 		id: 15,
 		name: 'ESLint',
-		link: 'https://en.wikipedia.org/wiki/ESLint',
 		logo: eslint
 	},
 	{
 		id: 16,
 		name: 'Postman',
-		link: 'https://en.wikipedia.org/wiki/Postman_(software)',
 		logo: postman
 	}
 ];

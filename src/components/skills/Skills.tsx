@@ -13,16 +13,16 @@ export const Skills = () => {
 			</p>
 
 			<div className={`${style.container} ${reusable.container} ${reusable.grid}`}>
-				{skills.map(({id, name, link, logo}) => {
+				{skills.map(({id, name, logo}) => {
 					return (
-						<a href={link} target="_blank" key={id} className={style.item}>
+						<div key={id} className={style.item}>
 							<div className={style.logo}>
 								<img src={logo} alt="logo"/>
 								<h3 className={style.name}>{name}</h3>
 							</div>
 
 							<img src={shapeTwo} alt="shapeTwo" className={`${reusable.shape} ${style.shape}`}/>
-						</a>
+						</div>
 					)
 				})}
 			</div>
