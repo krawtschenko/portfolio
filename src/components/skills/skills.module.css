@@ -11,10 +11,11 @@
 	display: grid;
 	align-items: center;
 	height: 200px;
-	background-color: var(--containerColor);
+	/*background-color: var(--containerColor);*/
 	border-radius: 20px;
 	position: relative;
 	overflow: hidden;
+	box-shadow: var(--shadow);
 
 	&:hover {
 		background-color: var(--primaryColor);
