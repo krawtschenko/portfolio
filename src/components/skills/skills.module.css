@@ -10,7 +10,7 @@
 .item {
 	display: grid;
 	align-items: center;
-	height: 190px;
+	height: 200px;
 	background-color: var(--containerColor);
 	border-radius: 20px;
 	position: relative;
@@ -27,7 +27,7 @@
 }
 
 .name {
-	margin-top: 6px;
+	margin-top: 8px;
 	text-align: center;
 	font-style: var(--largestFontSize);
 }

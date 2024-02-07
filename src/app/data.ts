@@ -92,7 +92,7 @@ export const skills = [
 
 	{
 		id: 4,
-		name: 'Redux | Redux Toolkit',
+		name: 'Redux',
 		link: 'https://en.wikipedia.org/wiki/Redux_(JavaScript_library)',
 		logo: redux
 	},

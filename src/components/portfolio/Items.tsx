@@ -3,6 +3,7 @@ import style from './portfolio.module.css'
 import reusable from 'common/styles/reusable.module.css'
 import {FaArrowRight} from 'react-icons/fa'
 import shapeTwo from 'assets/shape-2.png'
+import {motion} from "framer-motion";
 
 interface Props {
 	projectItems: {
@@ -21,7 +22,12 @@ export const Items = ({projectItems}: Props) => {
 				const {id, img, category, title, description} = projectItem
 
 				return (
-					<div className={`${style.items} ${reusable.card} ${reusable.cardTwo}`} key={id}>
+					<motion.div
+						layout
+						animate={{opacity: 1, scale: 1}}
+						initial={{opacity: 0.8, scale: 0.6}}
+						exit={{opacity: 0.8, scale: 0.6}}
+						className={`${style.items} ${reusable.card} ${reusable.cardTwo}`} key={id}>
 						<div className={style.imgWrapper}>
 							<img src={img} alt="img"/>
 						</div>
@@ -36,7 +42,7 @@ export const Items = ({projectItems}: Props) => {
 
 							<img src={shapeTwo} alt="shapeTwo" className={`${reusable.shape} ${reusable.c_shape}`}/>
 						</a>
-					</div>
+					</motion.div>
 				)
 			})}
 		</>

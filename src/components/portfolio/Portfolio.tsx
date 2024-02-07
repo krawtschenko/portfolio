@@ -7,8 +7,17 @@ import {projects} from "app/data";
 
 export const Portfolio = () => {
 	const allNavList = ['all', ...new Set(projects.map(projects => projects.category))]
-	const [projectItems, setMenuItems] = useState(projects)
-	const [navList, setCategories] = useState(allNavList)
+	const [projectItems, setProjectItems] = useState(projects)
+	const [navList, setNavList] = useState(allNavList)
+
+	const filterItems = (category: string) => {
+		if (category === 'all') {
+			setProjectItems(projects)
+		} else {
+			const filtered = projects.filter(elem => elem.category === category)
+			setProjectItems(filtered)
+		}
+	}
 
 	return (
 		<section className={`${style.portfolio} ${reusable.section}`} id='work'>
@@ -17,7 +26,7 @@ export const Portfolio = () => {
 				My <span>Cases</span>
 			</p>
 
-			<List list={navList}/>
+			<List list={navList} filterItems={filterItems}/>
 
 			<div className={`${style.container} ${reusable.container} ${reusable.grid}`}>
 				<Items projectItems={projectItems}/>
