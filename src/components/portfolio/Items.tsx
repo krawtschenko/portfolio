@@ -37,12 +37,16 @@ export const Items = ({projectItems}: Props) => {
 						<h3 className={style.title}>{title}</h3>
 						<p className={style.description}>{description}</p>
 
-						<a href={"#"} className={reusable.link}>
-							See project
+						<a href={"#"} className={`${reusable.link} ${style.link}`}>
+							View Demo
 							<FaArrowRight className={reusable.linkIcon}></FaArrowRight>
-
-							<img src={shapeTwo} alt="shapeTwo" className={`${reusable.shape} ${reusable.c_shape}`}/>
 						</a>
+						<a href={"#"} className={`${reusable.link} ${style.link}`}>
+							View Code
+							<FaArrowRight className={reusable.linkIcon}></FaArrowRight>
+						</a>
+
+						<img src={shapeTwo} alt="shapeTwo" className={`${reusable.shape} ${reusable.c_shape}`}/>
 					</motion.div>
 				)
 			})}

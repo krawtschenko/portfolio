@@ -82,3 +82,11 @@
 .listItem:hover::before, .active::before {
 	width: 40px;
 }
+
+.link {
+	display: block;
+
+	&:not(:last-child) {
+		margin-bottom: 5px;
+	}
+}
