@@ -84,9 +84,13 @@
 }
 
 .link {
-	display: block;
+	display: flex;
 
 	&:not(:last-child) {
 		margin-bottom: 5px;
+	}
+
+	span {
+		width: 86px;
 	}
 }

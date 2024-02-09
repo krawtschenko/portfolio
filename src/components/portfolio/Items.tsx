@@ -38,11 +38,11 @@ export const Items = ({projectItems}: Props) => {
 						<p className={style.description}>{description}</p>
 
 						<a href={"#"} className={`${reusable.link} ${style.link}`}>
-							View Demo
+							<span>View Demo</span>
 							<FaArrowRight className={reusable.linkIcon}></FaArrowRight>
 						</a>
 						<a href={"#"} className={`${reusable.link} ${style.link}`}>
-							View Code
+							<span>View Code</span>
 							<FaArrowRight className={reusable.linkIcon}></FaArrowRight>
 						</a>
 
