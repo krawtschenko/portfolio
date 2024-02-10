@@ -63,6 +63,7 @@
 	display: grid;
 	row-gap: 10px;
 	margin-bottom: 30px;
+	position: relative;
 }
 
 .formTag {
@@ -81,6 +82,13 @@
 	height: 60px;
 	border-radius: 30px;
 	padding-inline: 30px;
+}
+
+.formError {
+	position: absolute;
+	bottom: -25px;
+	padding-left: 30px;
+	color: #d40000;
 }
 
 .cardIcon, .formInput {
