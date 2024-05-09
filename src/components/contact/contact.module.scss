@@ -1,0 +1,108 @@
+.contact {
+  background-image: var(--secondGradient);
+}
+
+.container {
+  grid-template-columns: 5fr 7fr;
+}
+
+.content {
+}
+
+.card {
+  padding-left: 130px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.cardIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  font-size: var(--largerFontSize);
+  display: grid;
+  place-items: center;
+
+  &::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background-color: var(--borderColor);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -1px;
+  }
+}
+
+.cardTitle {
+  font-size: var(--h2FontSize);
+  font-family: var(--secondFont);
+  padding-block: 6px;
+}
+
+.cardData {
+}
+
+.form {
+}
+
+.formGroup {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.formDiv {
+  display: grid;
+  row-gap: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formTag {
+  margin-left: 30px;
+  font-size: var(--smallerFontSize);
+  font-weight: 700;
+  /*line-height: 1.7;*/
+
+  b {
+    color: var(--primaryColor);
+  }
+}
+
+.formInput {
+  color: var(--titleColor);
+  height: 60px;
+  border-radius: 30px;
+  padding-inline: 30px;
+}
+
+.formError {
+  position: absolute;
+  bottom: -25px;
+  padding-left: 30px;
+  color: #d40000;
+}
+
+.cardIcon,
+.formInput {
+  border: 2px solid var(--borderColor);
+  background-color: var(--containerColor);
+}
+
+.formArea .formInput {
+  height: 140px;
+  padding-block: 20px;
+  resize: none;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 30px;
+}

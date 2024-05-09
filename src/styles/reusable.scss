@@ -1,0 +1,149 @@
+.container {
+  max-width: 1300px;
+  margin-inline: auto;
+  padding-inline: 12px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.text_cs {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn {
+  padding-inline: 40px;
+  border: 2px solid var(--borderColor);
+  border-radius: 56px;
+  box-shadow: var(--shadow);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    inset: 2px;
+    transform: scale(0.3);
+
+    opacity: 0;
+    background-color: var(--primaryColor);
+    filter: blur(10px);
+    border-radius: inherit;
+
+    transition: all 0.7s var(--transition);
+  }
+
+  &:hover::before {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.heroLink {
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: -97%;
+    transform: translateY(-50%);
+
+    width: 40px;
+    height: 2px;
+
+    background-color: var(--borderColor);
+  }
+}
+
+.btn,
+.heroLink {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  place-items: center;
+
+  height: 56px;
+
+  font-size: var(--tinyFontSize);
+  font-weight: 700;
+  color: var(--titleColor);
+}
+
+.section {
+  padding-bottom: 220px;
+}
+
+.sectionTitle {
+  font-size: var(--h1FontSize);
+}
+
+.sectionSubtitle {
+  margin-bottom: 60px;
+
+  font-size: var(--smallerFontSize);
+  font-weight: 700;
+  color: var(--primaryColor);
+  text-transform: uppercase;
+
+  span {
+    margin-left: 10px;
+
+    font-family: var(--secondFont), sans-serif;
+    font-size: var(--h3FontSize);
+    color: var(--titleColor);
+    text-transform: capitalize;
+  }
+}
+
+.sectionTitle,
+.sectionSubtitle {
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  background-color: var(--containerColor);
+}
+
+.cardOne {
+  padding: 30px 35px;
+  border-radius: 18px;
+}
+
+.cardTwo {
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  color: var(--titleColor);
+
+  &:hover {
+    .linkIcon {
+      margin-left: 15px;
+    }
+  }
+}
+
+.linkIcon {
+  margin-left: 20px;
+  color: var(--primaryColor);
+  transition: all 0.3s var(--transition);
+}
+
+.c_shape {
+  right: -24px;
+  bottom: -24px;
+  width: 141px;
+  height: 141px;
+}
