@@ -1,6 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Jost:wght@400;500;700&display=swap';
 
 :root {
+  /* colors */
   --primaryColor: hsl(165deg 60% 40%);
   --titleColor: hsl(0deg 0% 100%);
   --textColor: hsl(0deg 0% 92%);
@@ -10,9 +11,13 @@
   --borderColor: hsl(210deg 2% 65%);
   --borderColorShadow: rgb(255 255 255 / 10%);
   --borderColorFooter: rgb(255 255 255 / 5%);
+
+  /* gradient */
   --firstGradient: linear-gradient(0deg, var(--bgColorAlt) 0%, var(--bgColor) 100%);
   --secondGradient: linear-gradient(180deg, var(--bgColorAlt) 0%, var(--bgColor) 100%);
   --thirdGradient: linear-gradient(180deg, var(--bgColor) 0%, var(--bgColor) 100%);
+
+  /* typography */
   --bodyFont: 'Jost', sans-serif;
   --secondFont: 'Caveat', cursive;
   --biggestFontSize: 90px;
@@ -28,6 +33,8 @@
   --smallFontSize: 15px;
   --smallerFontSize: 14px;
   --tinyFontSize: 13px;
+
+  /* other */
   --shadow: 5px 5px rgb(255 255 255 / 10%);
   --transition: cubic-bezier(0.3, 0, 0.3, 1);
 }

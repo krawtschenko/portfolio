@@ -1,113 +1,119 @@
-import style from "./header.module.css"
-import reusable from "common/styles/reusable.module.css"
-import {links} from "app/data";
-import {FaFacebook, FaGithub, FaLinkedin} from "react-icons/fa";
-import {BsSun, BsMoon} from 'react-icons/bs'
-import {useEffect, useState} from "react";
-import {Link, animateScroll} from 'react-scroll'
+import { useEffect, useState } from 'react'
+import { Link, animateScroll } from 'react-scroll'
+
+import { links } from '@/common/data'
+import clsx from 'clsx'
+import { BsMoon, BsSun } from 'react-icons/bs'
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
+
+import style from './header.module.scss'
 
 const getStorageTheme = () => {
-	let theme = 'light-theme'
+  let theme = 'light-theme'
 
-	if (localStorage.getItem('theme')) {
-		theme = localStorage.getItem('theme') ?? 'light-theme'
-	}
+  if (localStorage.getItem('theme')) {
+    theme = localStorage.getItem('theme') ?? 'light-theme'
+  }
 
-	return theme
+  return theme
 }
 
 export const Header = () => {
-	const [showMenu, setShowMenu] = useState(false);
-	const [scrollNav, setScrollNav] = useState(false);
-	const [theme, setTheme] = useState(getStorageTheme())
+  const [showMenu, setShowMenu] = useState(false)
+  const [scrollNav, setScrollNav] = useState(false)
+  const [theme, setTheme] = useState(getStorageTheme())
 
-	const scrollTop = () => {
-		animateScroll.scrollToTop()
-	}
+  const scrollTop = () => {
+    animateScroll.scrollToTop()
+  }
 
-	const changeNav = () => {
-		if (window.scrollY >= 80) {
-			setScrollNav(true)
-		} else {
-			setScrollNav(false)
-		}
-	}
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
 
-	const toggleTheme = () => {
-		if (theme === 'light-theme') {
-			setTheme('dark-theme')
-		} else {
-			setTheme('light-theme')
-		}
-	}
+  const toggleTheme = () => {
+    if (theme === 'light-theme') {
+      setTheme('dark-theme')
+    } else {
+      setTheme('light-theme')
+    }
+  }
 
-	useEffect(() => {
-		document.addEventListener('scroll', changeNav)
-	}, []);
+  useEffect(() => {
+    document.addEventListener('scroll', changeNav)
+  }, [])
 
-	useEffect(() => {
-		document.body.classList.toggle('no-scroll', showMenu)
-	}, [showMenu]);
+  useEffect(() => {
+    document.body.classList.toggle('no-scroll', showMenu)
+  }, [showMenu])
 
-	useEffect(() => {
-		document.documentElement.className = theme
-		localStorage.setItem('theme', theme)
-	}, [theme]);
+  useEffect(() => {
+    document.documentElement.className = theme
+    localStorage.setItem('theme', theme)
+  }, [theme])
 
-	return (
-		<header className={scrollNav ? `${style.header} ${style.scrollHeader}` : style.header}>
-			<nav className={style.nav}>
-				<Link to='/' onClick={scrollTop} className={`${style.logo} ${reusable.text_cs}`}>Portfolio</Link>
+  return (
+    <header className={scrollNav ? clsx(style.header, style.scrollHeader) : style.header}>
+      <nav className={style.nav}>
+        <Link className={clsx(style.logo, 'text_cs')} onClick={scrollTop} to={'/'}>
+          Portfolio
+        </Link>
 
-				<div className={showMenu ? `${style.menu} ${style.showMenu}` : style.menu}>
-					<div className={style.data}>
-						<ul className={style.list}>
-							{links.map(({path, name}, index) => {
-								return (
-									<li key={index} className={style.item}>
-										<Link
-											className={`${style.link} ${reusable.text_cs}`}
-											to={path}
-											spy={true}
-											smooth={true}
-											hashSpy={true}
-											offset={-150}
-											duration={500}
-											onClick={() => setShowMenu(!showMenu)}
-										>
-											{name}
-										</Link>
-									</li>
-								)
-							})}
-						</ul>
+        <div className={showMenu ? clsx(style.menu, style.showMenu) : style.menu}>
+          <div className={style.data}>
+            <ul className={style.list}>
+              {links.map(({ name, path }, index) => {
+                return (
+                  <li className={style.item} key={index}>
+                    <Link
+                      className={clsx(style.link, 'text_cs')}
+                      duration={500}
+                      hashSpy
+                      offset={-150}
+                      onClick={() => setShowMenu(!showMenu)}
+                      smooth
+                      spy
+                      to={path}
+                    >
+                      {name}
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
 
-						<div className={style.socials}>
-							<a href={"#"} className={style.socialLink}>
-								<FaLinkedin/>
-							</a>
-							<a href={"#"} className={style.socialLink}>
-								<FaGithub/>
-							</a>
-							<a href={"#"} className={style.socialLink}>
-								<FaFacebook/>
-							</a>
-						</div>
-					</div>
-				</div>
+            <div className={style.socials}>
+              <a className={style.socialLink} href={'#'}>
+                <FaLinkedin />
+              </a>
+              <a className={style.socialLink} href={'#'}>
+                <FaGithub />
+              </a>
+              <a className={style.socialLink} href={'#'}>
+                <FaFacebook />
+              </a>
+            </div>
+          </div>
+        </div>
 
-				<div className={style.btns}>
-					<div className={style.themeToggle} onClick={toggleTheme}>
-						{theme === 'light-theme' ? <BsMoon/> : <BsSun/>}
-					</div>
+        <div className={style.btns}>
+          <div className={style.themeToggle} onClick={toggleTheme}>
+            {theme === 'light-theme' ? <BsMoon /> : <BsSun />}
+          </div>
 
-					<div onClick={() => setShowMenu(!showMenu)}
-					     className={showMenu ? `${style.navToggle} ${style.animateToggle}` : style.navToggle}>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-			</nav>
-		</header>
-	)
+          <div
+            className={showMenu ? clsx(style.navToggle, style.animateToggle) : style.navToggle}
+            onClick={() => setShowMenu(!showMenu)}
+          >
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+  )
 }

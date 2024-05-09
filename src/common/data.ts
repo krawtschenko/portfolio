@@ -1,247 +1,245 @@
-import Project1 from 'assets/project1.jpeg';
-import Project2 from 'assets/project2.jpg';
-import Project3 from 'assets/project3.jpeg';
-import Project4 from 'assets/project4.jpeg';
-import Project5 from 'assets/project5.jpg';
-import Project6 from 'assets/project6.jpg';
-
-import javascript from 'assets/javascript.svg'
-import typescript from 'assets/typescript.svg'
-import react from 'assets/react.svg'
-import redux from 'assets/redux.svg'
-import html from 'assets/html.svg'
-import css from 'assets/css.svg'
-import sass from 'assets/sass.svg'
-import materialUI from 'assets/materialUI.svg'
-import bootstrap from 'assets/bootstrap.svg'
-import styledComponents from 'assets/styled-components.svg'
-
-import storybook from 'assets/storybook.svg'
-import git from 'assets/git.svg'
-import npm from 'assets/npm.svg'
-import yarn from 'assets/yarn.svg'
-import eslint from 'assets/eslint.svg'
-import postman from 'assets/postman.svg'
+import bootstrap from '@/assets/icons/bootstrap.svg'
+import css from '@/assets/icons/css.svg'
+import eslint from '@/assets/icons/eslint.svg'
+import git from '@/assets/icons/git.svg'
+import html from '@/assets/icons/html.svg'
+import javascript from '@/assets/icons/javascript.svg'
+import materialUI from '@/assets/icons/materialUI.svg'
+import npm from '@/assets/icons/npm.svg'
+import postman from '@/assets/icons/postman.svg'
+import react from '@/assets/icons/react.svg'
+import redux from '@/assets/icons/redux.svg'
+import sass from '@/assets/icons/sass.svg'
+import storybook from '@/assets/icons/storybook.svg'
+import styledComponents from '@/assets/icons/styled-components.svg'
+import typescript from '@/assets/icons/typescript.svg'
+import yarn from '@/assets/icons/yarn.svg'
+import Project1 from '@/assets/images/project1.jpeg'
+import Project2 from '@/assets/images/project2.jpg'
+import Project3 from '@/assets/images/project3.jpeg'
+import Project4 from '@/assets/images/project4.jpeg'
+import Project5 from '@/assets/images/project5.jpg'
+import Project6 from '@/assets/images/project6.jpg'
 
 export const links = [
-	{
-		name: 'Home',
-		path: 'home',
-	},
-	{
-		name: 'Skills',
-		path: 'skills',
-	},
-	{
-		name: 'Works',
-		path: 'work',
-	},
-	{
-		name: 'Resume',
-		path: 'resume',
-	},
-	{
-		name: 'Contact',
-		path: 'contact',
-	},
-];
+  {
+    name: 'Home',
+    path: 'home',
+  },
+  {
+    name: 'Skills',
+    path: 'skills',
+  },
+  {
+    name: 'Works',
+    path: 'work',
+  },
+  {
+    name: 'Resume',
+    path: 'resume',
+  },
+  {
+    name: 'Contact',
+    path: 'contact',
+  },
+]
 
 export const skills = [
-	{
-		id: 1,
-		name: 'JavaScript',
-		logo: javascript
-	},
+  {
+    id: 1,
+    logo: javascript,
+    name: 'JavaScript',
+  },
 
-	{
-		id: 2,
-		name: 'TypeScript',
-		logo: typescript
-	},
+  {
+    id: 2,
+    logo: typescript,
+    name: 'TypeScript',
+  },
 
-	{
-		id: 3,
-		name: 'React',
-		logo: react
-	},
+  {
+    id: 3,
+    logo: react,
+    name: 'React',
+  },
 
-	{
-		id: 4,
-		name: 'Redux',
-		logo: redux
-	},
-	{
-		id: 5,
-		name: 'HTML',
-		logo: html
-	},
+  {
+    id: 4,
+    logo: redux,
+    name: 'Redux',
+  },
+  {
+    id: 5,
+    logo: html,
+    name: 'HTML',
+  },
 
-	{
-		id: 6,
-		name: 'CSS',
-		logo: css
-	},
-	{
-		id: 7,
-		name: 'SCSS | Sass',
-		logo: sass
-	},
-	{
-		id: 8,
-		name: 'Material UI',
-		logo: materialUI
-	},
-	{
-		id: 9,
-		name: 'Bootstrap',
-		logo: bootstrap
-	},
-	{
-		id: 10,
-		name: 'Styled Components',
-		logo: styledComponents
-	},
-	{
-		id: 11,
-		name: 'Storybook',
-		logo: storybook
-	},
-	{
-		id: 12,
-		name: 'Git',
-		logo: git
-	},
-	{
-		id: 13,
-		name: 'Npm',
-		logo: npm
-	},
-	{
-		id: 14,
-		name: 'Yarn',
-		logo: yarn
-	},
-	{
-		id: 15,
-		name: 'ESLint',
-		logo: eslint
-	},
-	{
-		id: 16,
-		name: 'Postman',
-		logo: postman
-	}
-];
+  {
+    id: 6,
+    logo: css,
+    name: 'CSS',
+  },
+  {
+    id: 7,
+    logo: sass,
+    name: 'SCSS | Sass',
+  },
+  {
+    id: 8,
+    logo: materialUI,
+    name: 'Material UI',
+  },
+  {
+    id: 9,
+    logo: bootstrap,
+    name: 'Bootstrap',
+  },
+  {
+    id: 10,
+    logo: styledComponents,
+    name: 'Styled Components',
+  },
+  {
+    id: 11,
+    logo: storybook,
+    name: 'Storybook',
+  },
+  {
+    id: 12,
+    logo: git,
+    name: 'Git',
+  },
+  {
+    id: 13,
+    logo: npm,
+    name: 'Npm',
+  },
+  {
+    id: 14,
+    logo: yarn,
+    name: 'Yarn',
+  },
+  {
+    id: 15,
+    logo: eslint,
+    name: 'ESLint',
+  },
+  {
+    id: 16,
+    logo: postman,
+    name: 'Postman',
+  },
+]
 
 export const projects = [
-	{
-		id: 1,
-		img: Project1,
-		category: 'Branding',
-		title: 'Zorro',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-	},
-	{
-		id: 2,
-		img: Project2,
-		category: 'UI UX Design',
-		title: 'Gooir',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-	},
-	{
-		id: 3,
-		img: Project3,
-		category: 'Development',
-		title: 'Explore',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-	},
-	{
-		id: 4,
-		img: Project4,
-		category: 'Photography',
-		title: 'Mozar',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-	},
-	{
-		id: 5,
-		img: Project5,
-		category: 'Development',
-		title: 'Stay Fit',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-	},
-	{
-		id: 6,
-		img: Project6,
-		category: 'Branding',
-		title: 'Kana',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-	},
-];
+  {
+    category: 'Branding',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+    id: 1,
+    img: Project1,
+    title: 'Zorro',
+  },
+  {
+    category: 'UI UX Design',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+    id: 2,
+    img: Project2,
+    title: 'Gooir',
+  },
+  {
+    category: 'Development',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+    id: 3,
+    img: Project3,
+    title: 'Explore',
+  },
+  {
+    category: 'Photography',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+    id: 4,
+    img: Project4,
+    title: 'Mozar',
+  },
+  {
+    category: 'Development',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+    id: 5,
+    img: Project5,
+    title: 'Stay Fit',
+  },
+  {
+    category: 'Branding',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+    id: 6,
+    img: Project6,
+    title: 'Kana',
+  },
+]
 
 export const cv = [
-	{
-		id: 1,
-		title: 'CoderHouse Courses',
-		subtitle: 'Backend Programming',
-		date: '2014 - 2016',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		category: 'education',
-	},
+  {
+    category: 'education',
+    date: '2014 - 2016',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    id: 1,
+    subtitle: 'Backend Programming',
+    title: 'CoderHouse Courses',
+  },
 
-	{
-		id: 2,
-		title: 'Lviv National Academy of Arts',
-		subtitle: 'Faculty of Design',
-		date: '2012 - 2014',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		category: 'education',
-	},
+  {
+    category: 'education',
+    date: '2012 - 2014',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    id: 2,
+    subtitle: 'Faculty of Design',
+    title: 'Lviv National Academy of Arts',
+  },
 
-	{
-		id: 3,
-		title: 'IT Future',
-		subtitle: 'High School',
-		date: '2010 - 2012',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		category: 'education',
-	},
+  {
+    category: 'education',
+    date: '2010 - 2012',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    id: 3,
+    subtitle: 'High School',
+    title: 'IT Future',
+  },
 
-	{
-		id: 4,
-		title: 'UI Head & Manager',
-		subtitle: 'Soft Tech Inc.',
-		date: '2020 - PRESENT',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		category: 'experience',
-	},
+  {
+    category: 'experience',
+    date: '2020 - PRESENT',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    id: 4,
+    subtitle: 'Soft Tech Inc.',
+    title: 'UI Head & Manager',
+  },
 
-	{
-		id: 5,
-		title: 'UI / UX Specialist',
-		subtitle: 'Kana Design Studio',
-		date: '2018 - 2020',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		category: 'experience',
-	},
+  {
+    category: 'experience',
+    date: '2018 - 2020',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    id: 5,
+    subtitle: 'Kana Design Studio',
+    title: 'UI / UX Specialist',
+  },
 
-	{
-		id: 6,
-		title: 'Plugins Developer',
-		subtitle: 'Fiverr.com',
-		date: '2016 - 2018',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-		category: 'experience',
-	},
-];
+  {
+    category: 'experience',
+    date: '2016 - 2018',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    id: 6,
+    subtitle: 'Fiverr.com',
+    title: 'Plugins Developer',
+  },
+]

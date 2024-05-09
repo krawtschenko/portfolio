@@ -1,23 +1,24 @@
-import {Home} from "components/home/Home";
-import {Skills} from "components/skills/Skills";
-import {Portfolio} from "components/portfolio/Portfolio";
-import {Resume} from "components/resume/Resume";
-import {Contact} from "components/contact/Contact";
-import {Footer} from "components/footer/Footer";
-import {Header} from "components/header/Header";
+import { Contact } from '@/components/contact/Contact'
+import { Footer } from '@/components/footer/Footer'
+import { Header } from '@/components/header/Header'
+import { Home } from '@/components/home/Home'
+import { Portfolio } from '@/components/portfolio/Portfolio'
+import { Resume } from '@/components/resume/Resume'
+import { Skills } from '@/components/skills/Skills'
 
-const App = () => {
-	return (
-		<main className='main'>
-			<Header/>
-			<Home/>
-			<Skills/>
-			<Portfolio/>
-			<Resume/>
-			<Contact/>
-			<Footer/>
-		</main>
-	);
-};
+import './App.scss'
+import '@/styles/reusable.scss'
 
-export default App;
+export const App = () => {
+  return (
+    <main className={'main'}>
+      <Header />
+      <Home />
+      <Skills />
+      <Portfolio />
+      <Resume />
+      <Contact />
+      <Footer />
+    </main>
+  )
+}

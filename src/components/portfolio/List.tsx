@@ -1,25 +1,35 @@
-import React, {useState} from 'react';
-import style from './portfolio.module.css'
-import reusable from 'common/styles/reusable.module.css'
+import { useState } from 'react'
+
+import clsx from 'clsx'
+
+import style from './portfolio.module.scss'
 
 interface Props {
-	list: string[]
-	filterItems: (category: string) => void
+  filterItems: (category: string) => void
+  list: string[]
 }
 
-export const List = ({list, filterItems}: Props) => {
-	const [active, setActive] = useState(0)
+export const List = ({ filterItems, list }: Props) => {
+  const [active, setActive] = useState(0)
 
-	return (
-		<div className={style.list}>{list.map((category, index) => {
-			return (
-				<button onClick={() => {
-					setActive(index)
-					filterItems(category)
-				}} key={index}
-				        className={`${active === index ? style.active : ''}
-				        ${style.listItem} ${reusable.text_cs}`}>{category}</button>
-			)
-		})}</div>
-	);
-};
+  return (
+    <div className={style.list}>
+      {list.map((category, index) => {
+        return (
+          <button
+            // className={`${active === index ? style.active : ''}
+            //     ${style.listItem} ${reusable.text_cs}`}
+            className={clsx(active === index && style.active, style.listItem, 'text_cs')}
+            key={index}
+            onClick={() => {
+              setActive(index)
+              filterItems(category)
+            }}
+          >
+            {category}
+          </button>
+        )
+      })}
+    </div>
+  )
+}

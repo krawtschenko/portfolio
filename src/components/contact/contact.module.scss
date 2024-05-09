@@ -10,39 +10,46 @@
 }
 
 .card {
-  padding-left: 130px;
-  margin-bottom: 40px;
   position: relative;
+  margin-bottom: 40px;
+  padding-left: 130px;
 }
 
 .cardIcon {
   position: absolute;
   top: 0;
   left: 0;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  box-shadow: var(--shadow);
-  font-size: var(--largerFontSize);
+
   display: grid;
   place-items: center;
 
+  width: 56px;
+  height: 56px;
+
+  font-size: var(--largerFontSize);
+
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+
   &::after {
     content: '';
+
+    position: absolute;
+    top: 50%;
+    left: 100%;
+
     width: 40px;
     height: 2px;
-    background-color: var(--borderColor);
-    position: absolute;
-    left: 100%;
-    top: 50%;
     margin-top: -1px;
+
+    background-color: var(--borderColor);
   }
 }
 
 .cardTitle {
-  font-size: var(--h2FontSize);
-  font-family: var(--secondFont);
   padding-block: 6px;
+  font-family: var(--secondFont), sans-serif;
+  font-size: var(--h2FontSize);
 }
 
 .cardData {
@@ -57,17 +64,18 @@
 }
 
 .formDiv {
+  position: relative;
   display: grid;
   row-gap: 10px;
   margin-bottom: 30px;
-  position: relative;
 }
 
 .formTag {
   margin-left: 30px;
   font-size: var(--smallerFontSize);
   font-weight: 700;
-  /*line-height: 1.7;*/
+
+  /* line-height: 1.7; */
 
   b {
     color: var(--primaryColor);
@@ -75,10 +83,10 @@
 }
 
 .formInput {
-  color: var(--titleColor);
   height: 60px;
-  border-radius: 30px;
   padding-inline: 30px;
+  color: var(--titleColor);
+  border-radius: 30px;
 }
 
 .formError {
@@ -90,19 +98,19 @@
 
 .cardIcon,
 .formInput {
-  border: 2px solid var(--borderColor);
   background-color: var(--containerColor);
+  border: 2px solid var(--borderColor);
 }
 
 .formArea .formInput {
+  resize: none;
   height: 140px;
   padding-block: 20px;
-  resize: none;
 }
 
 .submit {
   display: flex;
+  column-gap: 30px;
   align-items: center;
   justify-content: flex-end;
-  column-gap: 30px;
 }

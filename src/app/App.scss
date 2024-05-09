@@ -1,4 +1,4 @@
-@import '../common/styles/variables.css';
+@import '../styles/variables';
 
 * {
   user-select: none;
@@ -19,7 +19,7 @@ body {
   background-color: var(--bgColor);
 }
 
-body .no-scroll {
+body.no-scroll {
   overflow: hidden;
 }
 

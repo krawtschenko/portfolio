@@ -1,31 +1,34 @@
-import React from 'react';
-import style from './footer.module.css'
-import reusable from "common/styles/reusable.module.css"
-import {FaFacebook, FaGithub, FaLinkedin} from "react-icons/fa";
+import clsx from 'clsx'
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
+
+import style from './footer.module.scss'
 
 export const Footer = () => {
-	return (
-		<footer className={style.footer}>
-			<div className={`${style.container} ${reusable.container} ${reusable.grid}`}>
-				<div className={style.socials}>
-					<a href={"#"} className={style.socialLink}>
-						<FaLinkedin/>
-					</a>
+  return (
+    <footer className={style.footer}>
+      <div className={clsx(style.container, 'container', 'grid')}>
+        <div className={style.socials}>
+          <a className={style.socialLink} href={'#'}>
+            <FaLinkedin />
+          </a>
 
-					<a href={"#"} className={style.socialLink}>
-						<FaGithub/>
-					</a>
+          <a className={style.socialLink} href={'#'}>
+            <FaGithub />
+          </a>
 
-					<a href={"#"} className={style.socialLink}>
-						<FaFacebook/>
-					</a>
-				</div>
+          <a className={style.socialLink} href={'#'}>
+            <FaFacebook />
+          </a>
+        </div>
 
-				<p className={`${style.copyright} ${reusable.text_cs}`}>© 2024 <span>Portfolio</span>. All Rights Reserved</p>
+        <p className={clsx(style.copyright, 'text_cs')}>
+          © 2024 <span>Portfolio</span>. All Rights Reserved
+        </p>
 
-
-				<p className={`${style.copyright} ${reusable.text_cs}`}>Developed by <span>Eugen Kravchenko</span></p>
-			</div>
-		</footer>
-	);
+        <p className={clsx(style.copyright, 'text_cs')}>
+          Developed by <span>Eugen Kravchenko</span>
+        </p>
+      </div>
+    </footer>
+  )
 }

@@ -1,6 +1,6 @@
 .footer {
-  border-top: 1px solid var(--borderColorFooter);
   padding-block: 60px;
+  border-top: 1px solid var(--borderColorFooter);
 
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -12,8 +12,8 @@
     }
 
     .socialLink {
-      color: var(--titleColor);
       font-size: var(--h5FontSize);
+      color: var(--titleColor);
       transition: all 0.7s var(--transition);
 
       &:hover {
