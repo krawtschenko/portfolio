@@ -1,116 +1,109 @@
 .contact {
   background-image: var(--secondGradient);
-}
 
-.container {
-  grid-template-columns: 5fr 7fr;
-}
+  .container {
+    grid-template-columns: 5fr 7fr;
 
-.content {
-}
+    .content {
+      .card {
+        position: relative;
+        margin-bottom: 40px;
+        padding-left: 130px;
 
-.card {
-  position: relative;
-  margin-bottom: 40px;
-  padding-left: 130px;
-}
+        .cardIcon {
+          position: absolute;
+          top: 0;
+          left: 0;
 
-.cardIcon {
-  position: absolute;
-  top: 0;
-  left: 0;
+          display: grid;
+          place-items: center;
 
-  display: grid;
-  place-items: center;
+          width: 56px;
+          height: 56px;
 
-  width: 56px;
-  height: 56px;
+          font-size: var(--largerFontSize);
 
-  font-size: var(--largerFontSize);
+          background-color: var(--containerColor);
+          border: 2px solid var(--borderColor);
+          border-radius: 50%;
+          box-shadow: var(--shadow);
 
-  border-radius: 50%;
-  box-shadow: var(--shadow);
+          &::after {
+            content: '';
 
-  &::after {
-    content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
 
-    position: absolute;
-    top: 50%;
-    left: 100%;
+            width: 40px;
+            height: 2px;
+            margin-top: -1px;
 
-    width: 40px;
-    height: 2px;
-    margin-top: -1px;
+            background-color: var(--borderColor);
+          }
+        }
 
-    background-color: var(--borderColor);
+        .cardTitle {
+          padding-block: 6px;
+          font-family: var(--secondFont), sans-serif;
+          font-size: var(--h2FontSize);
+        }
+      }
+    }
+
+    .form {
+      .formGroup {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+      }
+
+      .formDiv {
+        position: relative;
+        display: grid;
+        row-gap: 10px;
+        margin-bottom: 30px;
+
+        .formTag {
+          margin-left: 30px;
+          font-size: var(--smallerFontSize);
+          font-weight: 700;
+
+          b {
+            color: var(--primaryColor);
+          }
+        }
+
+        .formInput {
+          height: 60px;
+          padding-inline: 30px;
+
+          color: var(--titleColor);
+
+          background-color: var(--containerColor);
+          border: 2px solid var(--borderColor);
+          border-radius: 30px;
+        }
+
+        .formError {
+          position: absolute;
+          bottom: -25px;
+          padding-left: 30px;
+          color: #d40000;
+        }
+      }
+
+      .formArea .formInput {
+        resize: none;
+        height: 140px;
+        padding-block: 20px;
+      }
+
+      .submit {
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
   }
-}
-
-.cardTitle {
-  padding-block: 6px;
-  font-family: var(--secondFont), sans-serif;
-  font-size: var(--h2FontSize);
-}
-
-.cardData {
-}
-
-.form {
-}
-
-.formGroup {
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
-}
-
-.formDiv {
-  position: relative;
-  display: grid;
-  row-gap: 10px;
-  margin-bottom: 30px;
-}
-
-.formTag {
-  margin-left: 30px;
-  font-size: var(--smallerFontSize);
-  font-weight: 700;
-
-  /* line-height: 1.7; */
-
-  b {
-    color: var(--primaryColor);
-  }
-}
-
-.formInput {
-  height: 60px;
-  padding-inline: 30px;
-  color: var(--titleColor);
-  border-radius: 30px;
-}
-
-.formError {
-  position: absolute;
-  bottom: -25px;
-  padding-left: 30px;
-  color: #d40000;
-}
-
-.cardIcon,
-.formInput {
-  background-color: var(--containerColor);
-  border: 2px solid var(--borderColor);
-}
-
-.formArea .formInput {
-  resize: none;
-  height: 140px;
-  padding-block: 20px;
-}
-
-.submit {
-  display: flex;
-  column-gap: 30px;
-  align-items: center;
-  justify-content: flex-end;
 }

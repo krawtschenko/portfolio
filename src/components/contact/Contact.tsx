@@ -28,6 +28,7 @@ export const Contact = () => {
   })
 
   const onSubmit: SubmitHandler<Inputs> = data => {
+    // eslint-disable-next-line no-console
     console.log(data)
     reset()
   }
@@ -123,7 +124,7 @@ export const Contact = () => {
             )}
           </div>
 
-          <div className={`${style.formDiv} ${style.formArea}`}>
+          <div className={clsx(style.formDiv, style.formArea)}>
             <label className={clsx(style.formTag, 'text_cs')}>
               Your Message <b>*</b>
             </label>
