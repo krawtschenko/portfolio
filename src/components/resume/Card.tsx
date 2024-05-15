@@ -21,7 +21,7 @@ export const Card = (props: Props) => {
         <span className={style.icon}>{showInfo ? '-' : '+'}</span>
       </div>
 
-      <div className={`${showInfo ? style.show : ''} ${style.content}`}>
+      <div className={clsx(style.content, showInfo && style.show)}>
         <div className={style.dateTitle}>
           <h3 className={style.title}>{props.subtitle}</h3>
           <span className={clsx(style.date, 'text_cs')}>{props.date}</span>
