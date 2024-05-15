@@ -12,7 +12,7 @@ import { List } from './List'
 export const Portfolio = () => {
   const allNavList = ['all', ...new Set(projects.map(projects => projects.category))]
   const [projectItems, setProjectItems] = useState(projects)
-  const [navList, setNavList] = useState(allNavList)
+  const [navList] = useState(allNavList)
 
   const filterItems = (category: string) => {
     if (category === 'all') {
