@@ -17,8 +17,6 @@ export const List = ({ filterItems, list }: Props) => {
       {list.map((category, index) => {
         return (
           <button
-            // className={`${active === index ? style.active : ''}
-            //     ${style.listItem} ${reusable.text_cs}`}
             className={clsx(active === index && style.active, style.listItem, 'text_cs')}
             key={index}
             onClick={() => {
