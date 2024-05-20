@@ -111,3 +111,12 @@
     }
   }
 }
+
+/* media */
+@media screen and (width <= 1200px) {
+  .portfolio {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

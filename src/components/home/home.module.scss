@@ -74,7 +74,7 @@
           background-color: var(--primaryColor);
           border-radius: 50%;
 
-          img {
+          .profile {
             position: absolute;
             bottom: 0;
 
@@ -195,58 +195,68 @@
 
 /* media */
 @media screen and (width <= 1400px) {
-  .imgWrapper {
-    transform: translateY(-6%);
-    max-width: 600px;
-  }
+  .home {
+    .container {
+      .imgWrapper {
+        transform: translateY(-6%) !important;
+        max-width: 600px !important;
 
-  .profile {
-    height: auto;
-  }
+        .banner {
+          .profile {
+            height: auto !important;
+          }
+        }
 
-  .data {
-    transform: scale(0.9);
-  }
+        .data {
+          transform: scale(0.9);
+        }
 
-  .shapeOne {
-    width: 203px;
-    height: 203px;
-  }
+        .shapeOne {
+          width: 203px;
+          height: 203px;
+        }
 
-  .shapeTwo,
-  .shapeThree {
-    width: 126px;
-    height: 126px;
+        .shapeTwo,
+        .shapeThree {
+          width: 126px;
+          height: 126px;
+        }
+      }
+    }
   }
 }
 
 @media screen and (width <= 1200px) {
   .home {
     padding-top: 140px;
-  }
 
-  .subtitle,
-  .title,
-  .job,
-  .text {
-    text-align: center;
-  }
+    .wrapper {
+      .container {
+        .subtitle,
+        .title,
+        .job,
+        .text {
+          text-align: center;
+        }
 
-  .text {
-    margin-inline: auto;
-  }
+        .text {
+          margin-inline: auto;
+        }
 
-  .socials,
-  .buttons {
-    justify-content: center;
-  }
+        .socials,
+        .buttons {
+          justify-content: center;
+        }
 
-  .imgWrapper {
-    position: relative;
-    right: initial;
-    transform: initial;
+        .imgWrapper {
+          position: relative !important;
+          right: initial !important;
+          transform: initial !important;
 
-    margin-top: 140px;
-    margin-inline: auto;
+          margin-top: 140px;
+          margin-inline: auto;
+        }
+      }
+    }
   }
 }

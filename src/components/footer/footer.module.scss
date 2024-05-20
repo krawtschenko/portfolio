@@ -39,3 +39,14 @@
     }
   }
 }
+
+/* media */
+@media screen and (width <= 1200px) {
+  .footer {
+    .container {
+      .copyright:nth-child(2) {
+        justify-self: start;
+      }
+    }
+  }
+}
