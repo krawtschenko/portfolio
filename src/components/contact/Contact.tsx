@@ -1,5 +1,6 @@
 import { SubmitHandler, useForm } from 'react-hook-form'
 
+import shapeOne from '@/assets/shape-1.png'
 import { yupResolver } from '@hookform/resolvers/yup'
 import clsx from 'clsx'
 import { FaRegAddressBook, FaRegEnvelope, FaRegMap, FaRegUser } from 'react-icons/fa'
@@ -145,6 +146,10 @@ export const Contact = () => {
             </button>
           </div>
         </form>
+      </div>
+
+      <div className={'section__deco deco__left'}>
+        <img alt={'shapeOne'} className={'shape'} src={shapeOne} />
       </div>
     </section>
   )

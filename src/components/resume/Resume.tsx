@@ -1,3 +1,4 @@
+import shapeOne from '@/assets/shape-1.png'
 import { cv } from '@/common/data'
 import clsx from 'clsx'
 
@@ -51,6 +52,10 @@ export const Resume = () => {
             })}
           </div>
         </div>
+      </div>
+
+      <div className={'section__deco deco__right'}>
+        <img alt={'shapeOne'} className={'shape'} src={shapeOne} />
       </div>
     </div>
   )

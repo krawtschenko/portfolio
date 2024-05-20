@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+import shapeOne from '@/assets/shape-1.png'
 import { projects } from '@/common/data'
 import clsx from 'clsx'
 import { AnimatePresence } from 'framer-motion'
@@ -37,6 +38,10 @@ export const Portfolio = () => {
         <AnimatePresence initial={false}>
           <Items projectItems={projectItems} />
         </AnimatePresence>
+      </div>
+
+      <div className={'section__deco deco__left'}>
+        <img alt={'shapeOne'} className={'shape'} src={shapeOne} />
       </div>
     </section>
   )

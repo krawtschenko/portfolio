@@ -1,3 +1,4 @@
+import shapeOne from '@/assets/shape-1.png'
 import shapeTwo from '@/assets/shape-2.png'
 import { skills } from '@/common/data'
 import clsx from 'clsx'
@@ -25,6 +26,10 @@ export const Skills = () => {
             </div>
           )
         })}
+      </div>
+
+      <div className={'section__deco deco__right'}>
+        <img alt={'shapeOne'} className={'shape'} src={shapeOne} />
       </div>
     </section>
   )

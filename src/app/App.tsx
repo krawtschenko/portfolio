@@ -7,7 +7,7 @@ import { Resume } from '@/components/resume/Resume'
 import { Skills } from '@/components/skills/Skills'
 
 import './App.scss'
-import '@/styles/reusable.scss'
+import '@/styles/_reusable.scss'
 
 export const App = () => {
   return (

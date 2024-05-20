@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, animateScroll } from 'react-scroll'
 
+import shapeOne from '@/assets/shape-1.png'
 import { links } from '@/common/data'
 import clsx from 'clsx'
 import { BsMoon, BsSun } from 'react-icons/bs'
@@ -97,6 +98,10 @@ export const Header = () => {
                 <FaFacebook />
               </a>
             </div>
+          </div>
+
+          <div className={'section__deco deco__left header__deco'}>
+            <img alt={'shapeOne'} className={'shape'} src={shapeOne} />
           </div>
         </div>
 

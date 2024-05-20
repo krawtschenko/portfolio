@@ -1,3 +1,6 @@
+import { Link } from 'react-scroll'
+
+import CV from '@/assets/Kravchenko_CV.pdf'
 import profileImg from '@/assets/images/profile-img.png'
 import shapeOne from '@/assets/shape-1.png'
 import shapeTwo from '@/assets/shape-2.png'
@@ -25,7 +28,7 @@ export const Home = () => {
 
           <div className={style.imgWrapper}>
             <div className={style.banner}>
-              <img alt={'profileImg'} src={profileImg} />
+              <img alt={'profileImg'} className={style.profile} src={profileImg} />
             </div>
 
             <p className={clsx(style.data, style.dataOne)}>
@@ -69,14 +72,31 @@ export const Home = () => {
           </div>
 
           <div className={style.buttons}>
-            <a className={clsx('btn', 'text_cs')} href={'#'}>
+            <a className={clsx('btn', 'text_cs')} download href={CV}>
               Download CV
             </a>
-            <a className={clsx('heroLink', 'text_cs')} href={'#'}>
-              My skills
-            </a>
+
+            <Link
+              className={'heroLink text_cs'}
+              duration={500}
+              hashSpy
+              offset={-150}
+              smooth
+              spy
+              to={'contact'}
+            >
+              Contact
+            </Link>
           </div>
         </div>
+
+        <div className={'section__deco deco__left'}>
+          <img alt={'shapeOne'} className={'shape'} src={shapeOne} />
+        </div>
+      </div>
+
+      <div className={'section__deco deco__left'}>
+        <img alt={'shapeOne'} className={'shape'} src={shapeOne} />
       </div>
     </section>
   )

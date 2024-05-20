@@ -20,8 +20,8 @@
   /* typography */
   --bodyFont: 'Jost', sans-serif;
   --secondFont: 'Caveat', cursive;
-  --biggestFontSize: 90px;
-  --h1FontSize: 44px;
+  --biggestFontSize: clamp(2.25rem, 1.125rem + 5.1429vw, 5.625rem);
+  --h1FontSize: clamp(1.75rem, 1.4167rem + 1.5238vw, 2.75rem);
   --h2FontSize: 30px;
   --h3FontSize: 28px;
   --h4FontSize: 24px;
