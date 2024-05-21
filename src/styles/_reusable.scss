@@ -234,3 +234,33 @@
     max-width: 960px;
   }
 }
+
+@media screen and (width <= 992px) {
+  :root {
+    --h2FontSize: 24px;
+    --h3FontSize: 23px;
+    --h4FontSize: 21px;
+    --h5FontSize: 20px;
+    --largestFontSize: 19px;
+    --largerFontSize: 18px;
+    --largeFontSize: 16px;
+    --normalFontSize: 15px;
+    --smallFontSize: 14px;
+    --smallerFontSize: 13px;
+    --tinyFontSize: 12px;
+  }
+
+  .container {
+    max-width: 740px;
+  }
+
+  .heroLink {
+    &::before {
+      left: 50%;
+      top: -72%;
+      width: 2px;
+      height: 40px;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -50,3 +50,18 @@
     }
   }
 }
+
+@media screen and (width <= 992px) {
+  .footer {
+    .container {
+      grid-template-columns: 1fr;
+      row-gap: 12px;
+      justify-items: center;
+
+      .copyright:nth-child(2),
+      .copyright:last-child {
+        justify-self: center;
+      }
+    }
+  }
+}

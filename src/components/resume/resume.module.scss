@@ -93,3 +93,24 @@
     }
   }
 }
+
+/* media */
+@media screen and (width <= 992px) {
+  .container {
+    grid-template-columns: 1fr !important;
+    row-gap: 40px !important;
+
+    .group {
+      .items {
+        .item {
+          .header {
+            .icon {
+              width: 40px !important;
+              height: 40px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

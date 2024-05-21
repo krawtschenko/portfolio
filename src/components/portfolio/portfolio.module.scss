@@ -3,8 +3,10 @@
 
   .list {
     display: flex;
-    column-gap: 40px;
+    flex-wrap: wrap;
+    gap: 20px 40px;
     justify-content: center;
+
     margin-bottom: 60px;
 
     .listItem {
@@ -117,6 +119,22 @@
   .portfolio {
     .container {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (width <= 992px) {
+  .portfolio {
+    .container {
+      gap: 30px;
+
+      .items {
+        .imgWrapper {
+          img {
+            height: 200px;
+          }
+        }
+      }
     }
   }
 }

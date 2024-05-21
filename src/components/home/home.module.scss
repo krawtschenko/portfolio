@@ -260,3 +260,17 @@
     }
   }
 }
+
+@media screen and (width <= 992px) {
+  .home {
+    .wrapper {
+      .container {
+        .buttons {
+          flex-direction: column;
+          row-gap: 60px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

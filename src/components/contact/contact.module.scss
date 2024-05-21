@@ -100,9 +100,46 @@
 
       .submit {
         display: flex;
-        column-gap: 30px;
+        flex-wrap: wrap;
+        gap: 15px 30px;
         align-items: center;
         justify-content: flex-end;
+      }
+    }
+  }
+}
+
+/* media */
+@media screen and (width <= 992px) {
+  .contact {
+    .container {
+      .content {
+        .card {
+          padding-left: 100px;
+
+          .cardIcon {
+            width: 42px;
+            height: 42px;
+            font-size: var(--largeFontSize);
+
+            &::after {
+              width: 32px;
+            }
+          }
+
+          .cardTitle {
+            padding-block: 6px;
+            font-family: var(--secondFont), sans-serif;
+            font-size: var(--h2FontSize);
+          }
+        }
+      }
+
+      .form {
+        .formGroup {
+          grid-template-columns: 1fr;
+          row-gap: 0;
+        }
       }
     }
   }

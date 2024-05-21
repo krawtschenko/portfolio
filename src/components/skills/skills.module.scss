@@ -58,3 +58,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media screen and (width <= 992px) {
+  .container {
+    gap: 30px !important;
+  }
+}
