@@ -4,7 +4,7 @@
   .list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 40px;
+    gap: 15px 40px;
     justify-content: center;
 
     margin-bottom: 60px;
@@ -133,6 +133,36 @@
           img {
             height: 200px;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width <= 768px) {
+  .portfolio {
+    .list {
+      column-gap: 24px;
+
+      .listItem {
+        &::before {
+          bottom: -8px;
+        }
+      }
+    }
+
+    .container {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}
+
+@media screen and (width <= 350px) {
+  .container {
+    .items {
+      .imgWrapper {
+        img {
+          height: 180px !important;
         }
       }
     }

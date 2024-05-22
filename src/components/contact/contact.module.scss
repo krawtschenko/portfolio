@@ -144,3 +144,9 @@
     }
   }
 }
+
+@media screen and (width <= 768px) {
+  .container {
+    grid-template-columns: 1fr !important;
+  }
+}

@@ -147,13 +147,13 @@
         }
 
         .shapeTwo {
-          bottom: 8%;
-          left: -13%;
+          bottom: 7%;
+          left: -7%;
         }
 
         .shapeThree {
           right: -7%;
-          bottom: 0;
+          bottom: -5%;
         }
 
         .shapeTwo,
@@ -269,6 +269,91 @@
           flex-direction: column;
           row-gap: 60px;
           align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width <= 768px) {
+  .home {
+    .wrapper {
+      .container {
+        .imgWrapper {
+          max-width: 400px !important;
+          margin-top: 120px;
+
+          .data {
+            transform: scale(0.6);
+          }
+
+          .dataOne {
+            left: -12%;
+          }
+
+          .dataTwo {
+            right: -7%;
+          }
+
+          .shapeOne {
+            right: 9%;
+            width: 115px;
+            height: 115px;
+          }
+
+          .shapeTwo,
+          .shapeThree {
+            width: 72px;
+            height: 72px;
+          }
+
+          .shapeTwo {
+            bottom: 14%;
+            left: -6%;
+          }
+
+          .shapeThree {
+            right: -1%;
+            bottom: 6%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width <= 576px) {
+  .home {
+    .wrapper {
+      .container {
+        .imgWrapper {
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width <= 350px) {
+  .home {
+    .wrapper {
+      .container {
+        .imgWrapper {
+          margin-top: 80px;
+
+          .data {
+            transform: scale(0.5);
+          }
+
+          .dataOne {
+            bottom: 18%;
+            left: -18%;
+          }
+
+          .dataTwo {
+            right: -12%;
+            bottom: 0;
+          }
         }
       }
     }

@@ -64,3 +64,22 @@
     gap: 30px !important;
   }
 }
+
+@media screen and (width <= 768px) {
+  .container {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+
+    .item {
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (width <= 350px) {
+  .container {
+    .item {
+      width: 100%;
+    }
+  }
+}

@@ -264,3 +264,30 @@
     }
   }
 }
+
+@media screen and (width <= 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .header__deco {
+    left: 60px;
+  }
+}
+
+@media screen and (width <= 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (width <= 350px) {
+  .header__deco {
+    left: 40px;
+  }
+
+  .cardOne,
+  .cardTwo {
+    padding: 24px;
+  }
+}
