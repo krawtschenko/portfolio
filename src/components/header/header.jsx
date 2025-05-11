@@ -81,7 +81,7 @@ export const Header = () => {
 														spy={true}
 														hashSpy={true}
 														smooth={true}
-														offset={-150}
+														offset={-300}
 														duration={500}
 														onClick={() => setShowMenu(!showMenu)}
 												>

@@ -52,6 +52,7 @@
     }
 
     &-div {
+      position: relative;
       display: grid;
       row-gap: 10px;
       margin-bottom: 30px;
@@ -64,7 +65,7 @@
       font-weight: 700;
 
       b {
-        color: #b60000;
+        color: var(--primary-color);
       }
     }
 
@@ -75,12 +76,27 @@
       height: 60px;
       padding-inline: 30px;
       border-radius: 30px;
+
+      &.error {
+        border-color: #d30000;
+      }
     }
 
     &-area .contact__form-input {
       height: 140px;
       padding-block: 20px;
       resize: none;
+    }
+
+    &-error {
+      position: absolute;
+      top: 94px;
+      margin-left: 30px;
+      color: #d30000;
+
+      &.message {
+        top: 175px
+      }
     }
   }
 

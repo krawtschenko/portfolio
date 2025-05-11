@@ -95,7 +95,7 @@
   &__profile {
     position: absolute;
     bottom: 0;
-    height: 745px;
+    max-height: 745px;
     border-radius: 500px 0 500px 500px;
     object-fit: cover;
   }

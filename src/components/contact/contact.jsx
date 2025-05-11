@@ -1,24 +1,43 @@
-import {useState} from 'react';
-import {
-	FaRegAddressBook,
-	FaRegEnvelope,
-	FaRegUser,
-	FaRegMap,
-} from 'react-icons/fa';
+import {FaRegAddressBook, FaRegEnvelope, FaRegMap, FaRegUser} from 'react-icons/fa';
 import shapeOne from '../../assets/shape-1.png';
 import './contact.scss';
+import {useForm} from "react-hook-form";
+import {zodResolver} from '@hookform/resolvers/zod';
+import {z} from "zod";
+
+const schema = z.object({
+	name: z.string().min(3, {message: 'Required'}).max(20),
+	email: z.string().email(),
+	subject: z.string().min(5, {message: 'Required'}).max(20),
+	message: z.string().min(5, {message: 'Required'})
+})
 
 export const Contact = () => {
-	const [form, setForm] = useState({
-		name: '',
-		email: '',
-		subject: '',
-		message: '',
-	});
+	const {
+		register,
+		handleSubmit,
+		formState: {errors},
+		reset
+	} = useForm({
+		resolver: zodResolver(schema),
+	})
 
-	const handleChange = (e) => {
-		const {name, value} = e.target;
-		setForm(prev => ({...prev, [name]: value}));
+	const onSubmit = async (data) => {
+		try {
+			const response = await fetch("https://formsubmit.co/eugenykravchenko@icloud.com", {
+				method: "POST",
+				headers: {"Content-Type": "application/json"},
+				body: JSON.stringify(data),
+			});
+			if (response.ok) {
+				alert("You successfully sent to the form!");
+				reset();
+			} else {
+				alert("Something went wrong: " + response.status);
+			}
+		} catch (error) {
+			alert("Error: " + error.message);
+		}
 	};
 
 	const contactCards = [
@@ -48,58 +67,65 @@ export const Contact = () => {
 						))}
 					</div>
 
-					<form className="contact__form" onSubmit={(e) => e.preventDefault()}>
+					<form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
 						<div className="contact__form-group grid">
 							<div className="contact__form-div">
-								<label className="contact__form-tag text-cs">
+								<label className="contact__form-tag text-cs" htmlFor="name">
 									Your Full Name <b>*</b>
 								</label>
 								<input
 										type="text"
 										name="name"
-										onChange={handleChange}
-										value={form.name}
-										className="contact__form-input"
+										id="name"
+										autoComplete="name"
+										{...register('name')}
+										className={errors.name?.message ? "contact__form-input error" : 'contact__form-input'}
 								/>
+								{errors.name?.message && <span className='contact__form-error'>{errors.name?.message}</span>}
 							</div>
 
 							<div className="contact__form-div">
-								<label className="contact__form-tag text-cs">
+								<label className="contact__form-tag text-cs" htmlFor="email">
 									Your Email Address <b>*</b>
 								</label>
 								<input
 										type="email"
 										name="email"
-										onChange={handleChange}
-										value={form.email}
-										className="contact__form-input"
+										id="email"
+										autoComplete="email"
+										{...register('email')}
+										className={errors.email?.message ? "contact__form-input error" : 'contact__form-input'}
 								/>
+								{errors.email?.message && <span className='contact__form-error'>{errors.email?.message}</span>}
 							</div>
 						</div>
 
 						<div className="contact__form-div">
-							<label className="contact__form-tag text-cs">
+							<label className="contact__form-tag text-cs" htmlFor="subject">
 								Your Subject <b>*</b>
 							</label>
 							<input
 									type="text"
 									name="subject"
-									onChange={handleChange}
-									value={form.subject}
-									className="contact__form-input"
+									id="subject"
+									{...register('subject')}
+									className={errors.subject?.message ? "contact__form-input error" : 'contact__form-input'}
 							/>
+							{errors.subject?.message && <span className='contact__form-error'>{errors.subject?.message}</span>}
 						</div>
 
 						<div className="contact__form-div contact__form-area">
-							<label className="contact__form-tag text-cs">
+							<label className="contact__form-tag text-cs" htmlFor="message">
 								Your Message <b>*</b>
 							</label>
 							<textarea
 									name="message"
-									onChange={handleChange}
-									value={form.message}
-									className="contact__form-input"
+									id="message"
+									{...register('message')}
+									className={errors.message?.message ? "contact__form-input error" : 'contact__form-input'}
 							/>
+							{errors.message?.message &&
+									<span className='contact__form-error message'>{errors.message?.message}</span>}
 						</div>
 
 						<div className="contact__submit">
