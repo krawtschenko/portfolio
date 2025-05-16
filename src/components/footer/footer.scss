@@ -39,3 +39,26 @@
     }
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    &__copyright:nth-child(2) {
+      justify-self: start;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      row-gap: 12px;
+    }
+
+    &__copyright:nth-child(2),
+    &__copyright:last-child {
+      justify-self: start;
+    }
+  }
+}

@@ -352,3 +352,48 @@ img {
   pointer-events: none;
   color: rgba(255, 255, 255, 0.02);
 }
+
+@media screen and (max-width: 1400px) {
+  .section__deco:not(.header__deco) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --h2-font-size: 24px;
+    --h3-font-size: 23px;
+    --h4-font-size: 21px;
+    --h5-font-size: 20px;
+    --largest-font-size: 19px;
+    --larger-font-size: 18px;
+    --large-font-size: 16px;
+    --normal-font-size: 15px;
+    --small-font-size: 14px;
+    --smaller-font-size: 13px;
+    --tiny-font-size: 12px;
+  }
+
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card,
+  .card-two {
+    padding: 24px;
+  }
+}

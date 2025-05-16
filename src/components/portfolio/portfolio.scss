@@ -51,3 +51,39 @@
     row-gap: 10px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .portfolio {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio {
+    &__container {
+      gap: 30px;
+    }
+
+    &__img {
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .portfolio {
+    &__img {
+      height: 180px;
+    }
+  }
+}

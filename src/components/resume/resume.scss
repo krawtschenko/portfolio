@@ -80,3 +80,47 @@
     margin-block: 20px 30px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .resume {
+    &__container {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .resume {
+    &__header {
+      padding: 28px 24px;
+    }
+
+    &__content {
+      padding-inline: 24px 30px;
+    }
+
+    &__date-title {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .resume {
+    &__header {
+      padding: 24px 18px;
+    }
+
+    &__content {
+      padding-inline: 18px 20px;
+    }
+  }
+}

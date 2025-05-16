@@ -62,3 +62,36 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .skills {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .skills {
+    &__container {
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .skills {
+    &__titles,
+    &__description {
+      padding-inline: 16px;
+    }
+  }
+}

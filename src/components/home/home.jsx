@@ -40,14 +40,6 @@ export const Home = () => {
               </span>
 							</p>
 
-							<p className='home__data home__data-two'>
-								<span className='text-lg'>330</span>
-
-								<span className='text-sm text-cs'>
-                Completed <span>Projects</span>
-              </span>
-							</p>
-
 							<img src={shapeOne} alt='shapeOne' className='shape shape__1'/>
 							<img src={shapeTwo} alt='shapeTwo' className='shape shape__2'/>
 							<img src={shapeTwo} alt='shapeTwo' className='shape shape__3'/>

@@ -109,3 +109,33 @@
     row-gap: 15px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .contact {
+    &__card {
+      padding-left: 100px;
+
+      &-icon {
+        font-size: var(--large-font-size);
+        width: 42px;
+        height: 42px;
+
+        &::after {
+          width: 32px;
+        }
+      }
+    }
+
+    &__form-group {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -114,13 +114,8 @@
     z-index: 1;
 
     &-one {
-      bottom: 20%;
+      bottom: 14%;
       left: -4%;
-    }
-
-    &-two {
-      bottom: 12%;
-      right: 6%;
     }
 
     .text-lg,
@@ -186,4 +181,147 @@
 .shape__3 {
   bottom: 0;
   right: -2%;
+}
+
+@media screen and (max-width: 1400px) {
+  .home {
+    &__img-wrapper {
+      transform: translateY(-6%);
+      max-width: 600px;
+    }
+
+    &__data {
+      transform: scale(0.9);
+    }
+
+    &__profile {
+      height: auto;
+    }
+  }
+
+  .shape__1 {
+    width: 203px;
+    height: 203px;
+  }
+
+  .shape__2, .shape__3 {
+    width: 126px;
+    height: 126px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    padding: 110px 0;
+
+    &__subtitle,
+    &__title,
+    &__job,
+    &__text {
+      text-align: center;
+    }
+
+    &__socials,
+    &__btns {
+      justify-content: center;
+    }
+
+    &__img-wrapper {
+      position: relative;
+      transform: initial;
+      right: initial;
+      margin-inline: auto;
+      margin-top: 140px;
+    }
+
+    &__text {
+      margin-inline: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    &__btns {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 16px;
+    }
+  }
+
+  .hero__link::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    &__img-wrapper {
+      margin-block-start: 100px;
+      max-width: 400px;
+    }
+
+    &__data {
+      transform: scale(0.6);
+
+      &-one {
+        left: -12%;
+        bottom: 10%;
+      }
+    }
+  }
+
+  .shape__1 {
+    width: 115px;
+    height: 115px;
+    right: 9%;
+  }
+
+  .shape__2,
+  .shape__3 {
+    width: 72px;
+    height: 72px;
+  }
+
+  .shape__2 {
+    bottom: 10%;
+    left: -10%;
+  }
+
+  .shape__3 {
+    bottom: 4%;
+    right: -1%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home {
+    &__img-wrapper {
+      margin-block-start: 60px;
+    }
+
+    &__data {
+      &-one {
+        bottom: 10%;
+        left: -16%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .home {
+    &__img-wrapper {
+      margin-block-start: 40px;
+    }
+
+    &__data {
+      transform: scale(0.5);
+
+      &-one {
+        bottom: 10%;
+        left: -20%;
+      }
+    }
+  }
 }
