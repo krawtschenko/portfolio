@@ -3,7 +3,7 @@ import shapeOne from '../../assets/shape-1.png';
 import shapeTwo from '../../assets/shape-2.png';
 import {Link} from 'react-scroll';
 import {FaTelegramPlane, FaLinkedin, FaGithub} from 'react-icons/fa';
-// import CV from '../../assets/Zoe-Cv.pdf';
+import CV from '../../assets/CV.pdf';
 import './home.scss';
 
 export const Home = () => {
@@ -77,8 +77,7 @@ export const Home = () => {
 						</div>
 
 						<div className='home__btns'>
-							{/*<a download href={CV} className='btn text-cs'>*/}
-							<a download className='btn text-cs'>
+							<a download href={CV} className='btn text-cs'>
 								Download CV
 							</a>
 

@@ -36,7 +36,7 @@ export const Footer = () => {
 					</p>
 
 					<p className='footer__copyright text-cs'>
-						Developed By <span>Eugene Kravchenko</span>
+						Developed By <span>Yevhenii Kravchenko</span>
 					</p>
 				</div>
 			</footer>
