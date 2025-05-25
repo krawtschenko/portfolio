@@ -16,7 +16,7 @@ export const Home = () => {
 						</p>
 
 						<h1 className='home__title text-cs'>
-							<span>Eugene</span>
+							<span>Yevhenii</span>
 							<br/>
 							Kravchenko
 						</h1>

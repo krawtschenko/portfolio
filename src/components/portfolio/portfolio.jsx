@@ -13,7 +13,7 @@ export const Portfolio = () => {
 
 		<div className='portfolio__container container grid'>
 			{projects.map((projectItem) => {
-				const {id, img, category, title, description} = projectItem;
+				const {id, img, title, description, preview, code} = projectItem;
 				return (
 						<div
 								className='portfolio__items card card-two'
@@ -23,16 +23,16 @@ export const Portfolio = () => {
 								<img src={img} alt='' className='portfolio__img'/>
 							</div>
 
-							<span className='portfolio__category text-cs'>{category}</span>
+							<span className='portfolio__category text-cs'></span>
 							<h3 className='portfolio__title'>{title}</h3>
 							<p className='portfolio__description'>{description}</p>
 							<div className='portfolio__buttons'>
-								<a className='link' href={`#`}>
+								<a className='link' href={preview} target='_blank'>
 									See Preview
 									<FaArrowRight className='link__icon'/>
 								</a>
 
-								<a className='link' href={`#`}>
+								<a className='link' href={code} target='_blank'>
 									See Code
 									<FaArrowRight className='link__icon'></FaArrowRight>
 								</a>

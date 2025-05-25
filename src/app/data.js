@@ -67,37 +67,35 @@ export const skills = [{
 export const projects = [{
 	id: 1,
 	img: Project1,
-	category: 'Branding',
-	title: 'Zorro',
+	title: 'Flashcards',
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+	preview: 'https://flash-cards-krawczenko.vercel.app',
+	code: 'https://github.com/krawtschenko/flashcards'
 }, {
 	id: 2,
 	img: Project2,
-	category: 'UI UX Design',
-	title: 'Gooir',
+	title: 'Countries',
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+	preview: 'https://countries-krawczenko.vercel.app',
+	code: 'https://github.com/krawtschenko/countries'
 }, {
 	id: 3,
 	img: Project3,
-	category: 'Development',
 	title: 'Explore',
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
 }, {
 	id: 4,
 	img: Project4,
-	category: 'Photography',
 	title: 'Mozar',
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
 }, {
 	id: 5,
 	img: Project5,
-	category: 'Development',
 	title: 'Stay Fit',
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
 }, {
 	id: 6,
 	img: Project6,
-	category: 'Branding',
 	title: 'Kana',
 	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
 },];
@@ -115,17 +113,22 @@ export const cv = [{
 		id: 2,
 		title: 'Sumy State University',
 		subtitle: 'Master of Computer Science',
-		date: '2013 - 2017',
+		date: '2013 - 2018',
 		description: 'Relevant coursework in System Design, Software Engineering, and Database Development',
 		category: 'education',
 	},
 
 	{
 		id: 4,
-		title: 'Frontend Developer',
-		subtitle: '',
-		date: '',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+		title: 'Frontend Developer - Internship',
+		subtitle: 'IT-INCUBATOR',
+		date: '2025 - Present',
+		description: 'Developed a web application inspired by Instagram, focusing on user-generated content and social interaction features\n' +
+				'Refactored, debugged, and optimized code to improve application stability, performance, and scalability\n' +
+				'Integrated WebSockets to support real-time updates and enhance user interactivity\n' +
+				'Implemented form handling and validation using React Hook Form for a seamless user experience\n' +
+				'Utilized RTK Query for efficient data fetching, caching, and improved responsiveness\n' +
+				'Built reusable, scalable UI components using modern frontend libraries to ensure design consistency',
 		category: 'experience',
 	},
 
