@@ -134,7 +134,7 @@ export const cv = [{
 
 	{
 		id: 5,
-		title: 'IT Support Specialist',
+		title: 'Help Desk Support Specialist',
 		subtitle: 'Pro-Info',
 		date: '2021 - Present',
 		description: 'System administration: managing domains and services, ensuring data archiving and system continuity, administering Microsoft 365 and Active Directory\n' +
