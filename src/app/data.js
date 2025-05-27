@@ -1,9 +1,5 @@
 import Project1 from '../assets/projects/project1.png';
-import Project2 from '../assets/projects/project2.jpg';
-import Project3 from '../assets/projects/project3.jpeg';
-import Project4 from '../assets/projects/project4.jpeg';
-import Project5 from '../assets/projects/project5.jpg';
-import Project6 from '../assets/projects/project6.jpg';
+import Project2 from '../assets/projects/project2.png';
 
 export const links = [{
 	name: 'Home', path: 'home',
@@ -68,37 +64,17 @@ export const projects = [{
 	id: 1,
 	img: Project1,
 	title: 'Flashcards',
-	description: 'Application for learning words on desktop in format question-answer, that can use text or images. User can create private or public sets of words, and learn yours or public sets another users.',
+	description: 'A desktop app for learning words in a question-answer format using text or images. Users can create private or public word sets and learn their own or others’ public sets.',
 	preview: 'https://flash-cards-krawczenko.vercel.app',
 	code: 'https://github.com/krawtschenko/flashcards'
 }, {
 	id: 2,
 	img: Project2,
 	title: 'Countries',
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+	description: 'A responsive React app using REST Countries API with search, region filter, country details, border navigation, and dark/light mode toggle.',
 	preview: 'https://countries-krawczenko.vercel.app',
 	code: 'https://github.com/krawtschenko/countries'
-}, {
-	id: 3,
-	img: Project3,
-	title: 'Explore',
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-}, {
-	id: 4,
-	img: Project4,
-	title: 'Mozar',
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-}, {
-	id: 5,
-	img: Project5,
-	title: 'Stay Fit',
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-}, {
-	id: 6,
-	img: Project6,
-	title: 'Kana',
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-},];
+}];
 
 export const cv = [{
 	id: 1,
