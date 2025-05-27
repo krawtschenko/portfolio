@@ -1,4 +1,4 @@
-import Project1 from '../assets/projects/project1.jpeg';
+import Project1 from '../assets/projects/project1.png';
 import Project2 from '../assets/projects/project2.jpg';
 import Project3 from '../assets/projects/project3.jpeg';
 import Project4 from '../assets/projects/project4.jpeg';
@@ -68,7 +68,7 @@ export const projects = [{
 	id: 1,
 	img: Project1,
 	title: 'Flashcards',
-	description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+	description: 'Application for learning words on desktop in format question-answer, that can use text or images. User can create private or public sets of words, and learn yours or public sets another users.',
 	preview: 'https://flash-cards-krawczenko.vercel.app',
 	code: 'https://github.com/krawtschenko/flashcards'
 }, {
